@@ -3,7 +3,7 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 export default function Navbar() {
     return (
         <>
-            <div className="h-16 p-12 bg-white fixed top-0 left-0 w-full flex items-center">
+            <div className="h-16 p-12 bg-white fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
                 <div className="flex w-full justify-center">
                     <div className="flex gap-8">
 
