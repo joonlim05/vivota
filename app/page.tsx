@@ -3,6 +3,7 @@ import IntroSection from "@/components/intro_section";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import MissionStatement from "@/components/mission_statement";
+import SubjectsSection from "@/components/subjects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection/>
       <MissionStatement/>
       <IntroSection/>
+      <SubjectsSection/>
       <Footer/>
     </>
   );
