@@ -1,12 +1,15 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
+import Link from "next/link";
 
 export default function Navbar() {
     return (
         <>
-            <div className="h-16 p-12 bg-white fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
+            <div className="h-20 bg-white fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
+                <Link href="/">
+                    <img src="/logo.png" alt="Logo" className="w-24 h-auto ml-32 cursor-pointer" />
+                </Link>
                 <div className="flex w-full justify-center">
                     <div className="flex gap-8">
-
                         <Popover>
                             <PopoverButton className="block text-sm md:text-base font-semibold text-black/50 focus:outline-none data-active:text-black data-focus:outline data-focus:outline-white data-hover:text-black">
                                 About Us
@@ -17,9 +20,12 @@ export default function Navbar() {
                                 className="divide-y divide-white/5 rounded-xl bg-white/90 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:--spacing(5)] data-closed:-translate-y-1 data-closed:opacity-0"
                             >
                                 <div className="p-3">
-                                    <a className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="#">
+                                    <Link
+                                        href="/vivota-oath"
+                                        className="block rounded-lg px-3 py-2 transition hover:bg-white/5"
+                                    >
                                         <p className="font-semibold text-black">The Vivota Oath</p>
-                                    </a>
+                                    </Link>
                                     <a className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="#">
                                         <p className="font-semibold text-black">Our Content Experts</p>
                                     </a>
