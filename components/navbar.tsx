@@ -118,8 +118,6 @@ export default function Navbar() {
                                 </div>
                             </PopoverPanel>
                         </Popover>
-
-
                     </div>
                 </div>
             </div >

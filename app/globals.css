@@ -2,8 +2,8 @@
 @plugin "daisyui";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --root-bg: var(--background);
+  --page-scroll-bg: var(--background);
 }
 
 @theme inline {
