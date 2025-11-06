@@ -29,9 +29,9 @@ export default function Navbar() {
                                     <a className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="#">
                                         <p className="font-semibold text-black">Our Content Experts</p>
                                     </a>
-                                    <a className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="#">
-                                        <p className="font-semibold text-black">Vivota House System</p>
-                                    </a>
+                                    <Link className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="/vivota-system">
+                                        <p className="font-semibold text-black">The Vivota System</p>
+                                    </Link>
                                     <a className="block rounded-lg px-3 py-2 transition hover:bg-white/5" href="#">
                                         <p className="font-semibold text-black">Student Testimonials</p>
                                     </a>

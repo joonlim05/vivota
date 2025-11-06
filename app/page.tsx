@@ -13,7 +13,6 @@ export default function Home() {
       <IntroSection/>
       <SubjectsSection/>
       <VivotaSystem/>
-      <Footer/>
     </>
   );
 }
