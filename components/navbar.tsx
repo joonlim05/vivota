@@ -76,11 +76,12 @@ export default function Navbar() {
                             </PopoverPanel>
                         </Popover>
 
-                        <Popover>
-                            <PopoverButton className="block text-sm md:text-base font-semibold text-black/50 focus:outline-none data-active:text-black data-focus:outline data-focus:outline-white data-hover:text-black">
-                                Plans & Pricing
-                            </PopoverButton>
-                        </Popover>
+                        <Link
+                            href="/plans-and-pricing"
+                            className="block text-sm md:text-base font-semibold text-black/50 focus:outline-none active:text-black focus:outline focus:outline-white hover:text-black"
+                        >
+                            <p>Plans and Pricing</p>
+                        </Link>
 
                         <Popover>
                             <PopoverButton className="block text-sm md:text-base font-semibold text-black/50 focus:outline-none data-active:text-black data-focus:outline data-focus:outline-white data-hover:text-black">
