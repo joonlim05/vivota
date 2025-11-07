@@ -115,9 +115,41 @@ export default function VivotaSystem() {
                 </div>
             </div>
 
+            {/*steps component to illustrate mastery plan*/}
             <div className="h-screen flex justify-center items-center">
                 <div>
                     <StepsComponent />
+                </div>
+            </div>
+
+            {/*video recording*/}
+            <div className="flex justify-center h-screen">
+                <div className="max-w-5xl flex justify-center items-center gap-24">
+                    <img src="/video.svg" className="w-32 md:w-48" />
+                    <div>
+                        <p className="font-bold text-lg md:text-xl leading-loose tracking-wide mb-8">
+                            Every session in Vivota is recorded, giving students on-demand replays to revisit any lesson they wish
+                            for their future revision.
+                        </p>
+                        <ul className="space-y-4 text-xl leading-relaxed tracking-wide">
+                            <li>
+                                <p className="font-semibold ">Any Place, Any Time:</p>
+                                <p>Revise at your convenience.</p>
+                            </li>
+                            <li>
+                                <p className="font-semibold ">Unlimited Replays:</p>
+                                <p>Learn at your own speed, review your mistakes.</p>
+                            </li>
+                            <li>
+                                <p className="font-semibold ">Back on Track:</p>
+                                <p>Missed a lesson? Resync with your peers.</p>
+                            </li>
+                            <li>
+                                <p className="font-semibold ">Easy Troubleshooting:</p>
+                                <p>Seek help for any part of the replay. Minimal hassle!</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
