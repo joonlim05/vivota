@@ -5,10 +5,10 @@ export default function Navbar() {
     return (
         <>
             <div className="h-20 bg-white fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
-                <Link href="/">
+                <Link href="/" className="justify-start">
                     <img src="/logo.png" alt="Logo" className="w-24 h-auto ml-32 cursor-pointer" />
                 </Link>
-                <div className="flex w-full justify-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2">
                     <div className="flex gap-8">
                         <Popover>
                             <PopoverButton className="block text-sm md:text-base font-semibold text-black/50 focus:outline-none data-active:text-black data-focus:outline data-focus:outline-white data-hover:text-black">
