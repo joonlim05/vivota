@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PricingTable from "@/components/pricing_table";
 
 export default function PlansPricing() {
@@ -26,7 +27,9 @@ export default function PlansPricing() {
                                 </li>
                             </ul>
                             <div className="mt-auto">
-                                <button className="btn btn-warning btn-block">Enrol Now</button>
+                                <Link href="/enrolment">
+                                    <button className="btn btn-warning btn-block">Enrol Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -56,7 +59,9 @@ export default function PlansPricing() {
                                 </li>
                             </ul>
                             <div className="mt-auto">
-                                <button className="btn btn-warning btn-block">Enrol Now</button>
+                                <Link href="/enrolment">
+                                    <button className="btn btn-warning btn-block">Enrol Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -95,7 +100,9 @@ export default function PlansPricing() {
                                 </li>
                             </ul>
                             <div className="mt-auto">
-                                <button className="btn btn-warning btn-block">Enrol Now</button>
+                                <Link href="/enrolment">
+                                    <button className="btn btn-warning btn-block">Enrol Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
