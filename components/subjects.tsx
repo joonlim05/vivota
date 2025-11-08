@@ -11,8 +11,8 @@ export default function SubjectsSection() {
     return (
         <div className="max-w-7xl h-screen mx-auto my-16 md:my-24 lg:my-48">
             <h1 className="text-4xl font-bold text-white text-center mb-8">Our JC Courses</h1>
-            <h2 className="text-xl text-white text-center">Vivota specialises in delivering quality education tailored for Junior College students.</h2>
-            <h2 className="text-xl text-white text-center mb-12">Explore the 5 subjects taught in-depth by our Content Experts!</h2>
+            <h2 className="text-xl text-white text-center tracking-wide">Vivota specialises in delivering quality education tailored for Junior College students.</h2>
+            <h2 className="text-xl text-white text-center mb-12 tracking-wide">Explore the 5 subjects taught in-depth by our Content Experts!</h2>
 
             <div className="flex flex-col items-center max-w-5xl mx-auto">
                 {/* --- Row 1: First 3 cards --- */}
