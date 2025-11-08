@@ -16,7 +16,7 @@ export default function VivotaOath() {
                         <ul className="list-disc list-inside ">
                             <li>12-hour weekday replies</li>
                             <li>Weekly check-in tailored to each individual student</li>
-                            <li>Optional monthly 1-1 consult sessions (up to 20 mins)</li>
+                            <li>Optional monthly 1-1 consult sessions (up to 30 mins)</li>
                             <li>Balanced workloads. No additional stress.</li>
                         </ul>
                     </div>
@@ -47,9 +47,10 @@ export default function VivotaOath() {
                             Team-Based Learning as standard. Students discuss, reason, and choose with evidence—not just guesswork.
                         </p>
                         <ul className="list-disc list-inside">
-                            <li>Quick readiness checks (IRAT/TRAT)</li>
-                            <li>Application cases with one best answer</li>
-                            <li>Instructor debriefs</li>
+                            <li>Small class sizes of 6-10 students</li>
+                            <li>Focus on classroom discussions and critical thinking</li>
+                            <li>Fully marked work within 72 hours with learning pointers</li>
+                            <li>Nurturing environment for study and growth</li>
                         </ul>
                     </div>
                     <div className="md:w-1/2 flex justify-center items-center">
@@ -65,12 +66,12 @@ export default function VivotaOath() {
                     <div className="md:w-1/2">
                         <h2 className="text-2xl font-semibold mb-4">Transparency at our Core</h2>
                         <p className="mb-4">
-                            We believe in engaging fully with parents and keeping them in the loop on their child's progress.
+                            We believe in engaging fully with parents and keeping them in the loop on their child's progress every step of the way.
                         </p>
                         <ul className="list-disc list-inside">
-                            <li>Marked work within 72 hours</li>
-                            <li>Monthly 1-page snapshot (Mastery, Habits, Wellbeing, Next 14 days)</li>
-                            <li>Termly consultation</li>
+                            <li>Monthly updates (Mastery, Habits, Well-being, Next 14 days)</li>
+                            <li>Termly discussions with parents</li>
+                            <li>Quick replies to any enquiries</li>
                         </ul>
                     </div>
                 </div>
