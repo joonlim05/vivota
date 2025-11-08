@@ -5,7 +5,7 @@ export default function MissionStatement() {
         <div className="max-w-7xl min-h-screen mx-auto flex flex-col items-center">
             <h1 className="text-4xl font-bold text-center my-8">Vivota's Core Mission</h1>
             <p className="text-base md:text-lg my-8 leading-loose">
-                Vivota exists because students deserve more than just syllabus coverage. As both doctors and educational specialists,
+                Vivota exists because students deserve more than just syllabus coverage. As both doctors-to-be and educational specialists,
                 we’re here to diagnose our students' learning gaps and provide the timely treatment for them to ace their exams!
                 We’re motivated by simple beliefs: that calm beats cram, that small wins compound, and that a learner who feels seen and heard always learns better.
                 By relying on our unique and proprietary Vivota Mentorship System we alleviate
@@ -17,7 +17,9 @@ export default function MissionStatement() {
             </p>
             <div className="text-center">
                 <Link href="/vivota-oath">
-                    <button className="btn btn-info">Find out More</button>
+                    <button className="btn text-base md:text-lg md:p-6 bg-[#e6bb10] text-black hover:bg-[#f7cd25] hover:scale-105 transition-transform duration-300">
+                        Find out More
+                    </button>
                 </Link>
             </div>
         </div>
