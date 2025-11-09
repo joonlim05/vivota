@@ -53,7 +53,7 @@ export default function Carousel() {
             {/* Navigation buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2
+                className="absolute left-0 top-1/3 -translate-y-1/2
                 w-12 h-12 flex items-center justify-center
                 rounded-full
                 bg-white/20 backdrop-blur-md border border-white/30
@@ -64,7 +64,7 @@ export default function Carousel() {
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2
+                className="absolute right-0 top-1/3 -translate-y-1/2
                 w-12 h-12 flex items-center justify-center
                 rounded-full
                 bg-white/20 backdrop-blur-md border border-white/30

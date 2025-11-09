@@ -45,8 +45,8 @@ const vivotaOathSections = [
 
 export default function VivotaOath() {
     return (
-        <div className="max-w-7xl mx-auto my-12 md:my-24 lg:my-32 
-        px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 mt-32 md:mt-36 lg:mt-40 xl:mt-44">
+        <div className="max-w-7xl mx-auto my-32 md:my-36 lg:my-40 
+        px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16">
             <h1 className="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-12">
                 The Vivota Oath
             </h1>
