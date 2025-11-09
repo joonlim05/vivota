@@ -16,10 +16,10 @@ export default function Navbar() {
             label: "Subjects",
             dropdown: [
                 { label: "JC Physics", href: "/physics" },
-                { label: "JC Chemistry", href: "#" },
-                { label: "JC Biology", href: "#" },
-                { label: "JC Math", href: "#" },
-                { label: "JC General Paper", href: "#" },
+                { label: "JC Chemistry", href: "/chemistry" },
+                { label: "JC Biology", href: "/biology" },
+                { label: "JC Math", href: "/math" },
+                { label: "JC General Paper", href: "/general-paper" },
             ],
         },
         {

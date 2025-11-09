@@ -1,11 +1,12 @@
+import Link from "next/link"
 export default function SubjectsSection() {
 
     const content = [
-        { title: "Physics", pic: "/physics.svg" },
-        { title: "Chemistry", pic: "/chemistry.svg" },
-        { title: "Biology", pic: "/biology.svg" },
-        { title: "Math", pic: "/math.svg" },
-        { title: "General Paper", pic: "/gp.svg" }
+        { title: "Physics", pic: "/physics.svg", url: "/physics" },
+        { title: "Chemistry", pic: "/chemistry.svg", url: "/chemistry" },
+        { title: "Biology", pic: "/biology.svg", url: "/biology" },
+        { title: "Math", pic: "/math.svg", url: "/math" },
+        { title: "General Paper", pic: "/gp.svg", url: "/general-paper" }
     ]
 
     return (
@@ -37,9 +38,11 @@ export default function SubjectsSection() {
                                     {item.title}
                                 </h3>
                                 <img src={item.pic} className="w-20 md:w-24 h-auto mb-4 md:mb-8" alt={item.title} />
-                                <button className="bg-blue-500 font-bold text-white px-4 md:px-5 py-2 rounded-lg hover:bg-blue-600 transition">
-                                    Learn More
-                                </button>
+                                <Link href={item.url}>
+                                    <button className="bg-blue-500 font-bold text-white px-4 md:px-5 py-2 rounded-lg hover:bg-blue-600 transition">
+                                        Learn More
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
@@ -59,9 +62,11 @@ export default function SubjectsSection() {
                                     {item.title}
                                 </h3>
                                 <img src={item.pic} className="w-20 md:w-24 h-auto mb-4 md:mb-8" alt={item.title} />
-                                <button className="bg-blue-500 font-bold text-white px-4 md:px-5 py-2 rounded-lg hover:bg-blue-600 transition">
-                                    Learn More
-                                </button>
+                                <Link href={item.url}>
+                                    <button className="bg-blue-500 font-bold text-white px-4 md:px-5 py-2 rounded-lg hover:bg-blue-600 transition">
+                                        Learn More
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     ))}

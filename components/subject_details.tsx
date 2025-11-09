@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Link from "next/link";
 
 export type SubjectDetailsProps = {
     subject: {
@@ -32,9 +33,11 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                         <p className="text-base md:text-lg leading-relaxed">
                             {subject.blurb}
                         </p>
-                        <button className="btn btn-warning px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                            Learn More
-                        </button>
+                        <Link href="/plans-and-pricing">
+                            <button className="btn btn-warning px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
 
                     <div className="flex justify-center">
@@ -43,7 +46,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                         shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                             <img
                                 src={subject.img}
-                                alt="Physics"
+                                alt={subject.img}
                                 className="w-full h-full object-contain p-12 filter brightness-0 invert"
                             />
                             <div className="absolute -top-4 -right-4 w-18 h-18 md:w-24 md:h-24 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
@@ -84,7 +87,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                     <div>
                         <h2 className="text-3xl font-bold mb-6">
                             <span className="block sm:inline">Core Topics in{" "}</span>
-                            <span>H2 Physics</span>
+                            <span>{subject.type == "General Paper" ? "H1" : "H2"}{" "}{subject.type}</span>
                         </h2>
                         <div className="space-y-3">
                             {topics.map((topic, idx) => (
@@ -138,12 +141,16 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                         Join Vivota and {subject.cta}
                     </p>
                     <div className="flex gap-4 justify-center gap-8">
-                        <button className="btn btn-warning px-8 py-6 text-black text-base md:text-lg rounded-lg font-semibold hover:scale-105 transition-all shadow-lg">
-                            Enroll Now
-                        </button>
-                        <button className="px-8 py-2 text-base md:text-lg border-2 border-white rounded-lg font-semibold hover:scale-105 transition-all">
-                            Learn More
-                        </button>
+                        <Link href="/enrolment">
+                            <button className="btn btn-warning px-8 py-6 text-black text-base md:text-lg rounded-lg font-semibold hover:scale-105 transition-all shadow-lg">
+                                Enroll Now
+                            </button>
+                        </Link>
+                        <Link href="/plans-and-pricing">
+                            <button className="px-8 py-2 text-base md:text-lg border-2 border-white rounded-lg font-semibold hover:scale-105 transition-all">
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
