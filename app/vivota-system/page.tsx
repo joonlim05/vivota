@@ -35,8 +35,7 @@ export default function VivotaSystem() {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto my-36 md:my-38 lg:my-40 px-8 md:px-12 lg:px-16
-        space-y-24 md:space-y-32 lg:space-y-48">
+        <div className="max-w-7xl mx-auto my-36 md:my-38 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14 space-y-24 md:space-y-32 lg:space-y-48">
 
             {/* Hero Section */}
             <div className="flex flex-col items-center">
