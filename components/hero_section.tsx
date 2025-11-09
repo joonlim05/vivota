@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
     return (
         <>
@@ -9,14 +11,25 @@ export default function HeroSection() {
                         <span className="block lg:inline xl:block 2xl:inline">VIVOTA{" "}</span>
                         <span className="block lg:inline xl:block 2xl:inline">EDUCATION</span>
                     </p>
-                    <span className="mt-4 text-xl sm:text-2xl md:text-3xl xl:text-4xl md:mb-4 text-gray-300 font-medium tracking-wide">
+                    <p className="mt-4 text-xl sm:text-2xl md:text-3xl xl:text-4xl text-gray-300 font-medium tracking-wide">
                         <span className="block 2xl:inline">
                             Venture Today,
                         </span>{" "}
                         <span className="block 2xl:inline text-yellow-600">
                             Victory Tomorrow
                         </span>
-                    </span>
+                    </p>
+                    {/* CTA Button */}
+                    <Link href="/enrolment">
+                        <button
+                            className="mt-6 md:mt-8 px-4 py-2 sm:px-6 sm:py-3 md:mb-4 text-base sm:text-lg font-semibold 
+                        bg-gradient-to-r from-amber-400 to-yellow-500 
+                        text-black rounded-full shadow-lg transition-all 
+                        hover:scale-105 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] 
+                        active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300">
+                            Join Us Today!
+                        </button>
+                    </Link>
                 </div>
 
                 <img
