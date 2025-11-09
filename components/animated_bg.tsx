@@ -56,7 +56,7 @@ export default function EmberBackground() {
 
     // Don't render particles until we know window size
     if (!windowSize.width) return null;
-    const colors = ["#fac043ff", "#e7e7e7ff"];
+    const colors = ["#fac043ff", "#9ac2ffff"];
     const numParticles = 25;
 
     const colorList = [

@@ -9,15 +9,13 @@ export default function Navbar() {
             label: "About Us",
             dropdown: [
                 { label: "The Vivota Oath", href: "/vivota-oath" },
-                { label: "Our Content Experts", href: "#" },
                 { label: "The Vivota System", href: "/vivota-system" },
-                { label: "Student Testimonials", href: "#" },
             ],
         },
         {
             label: "Subjects",
             dropdown: [
-                { label: "JC Physics", href: "#" },
+                { label: "JC Physics", href: "/physics" },
                 { label: "JC Chemistry", href: "#" },
                 { label: "JC Biology", href: "#" },
                 { label: "JC Math", href: "#" },
@@ -30,13 +28,7 @@ export default function Navbar() {
         },
         {
             label: "Class Schedule",
-            dropdown: [
-                { label: "JC Physics", href: "#" },
-                { label: "JC Chemistry", href: "#" },
-                { label: "JC Biology", href: "#" },
-                { label: "JC Math", href: "#" },
-                { label: "JC General Paper", href: "#" },
-            ],
+            href: "/plans-and-pricing",
         },
     ];
 
