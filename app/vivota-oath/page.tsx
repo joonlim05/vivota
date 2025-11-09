@@ -1,82 +1,103 @@
+const vivotaOathSections = [
+    {
+        title: "Student First, Syllabus Second",
+        text: `Your child’s wellbeing takes utmost precedence. No late-night demands, clear 9am–9pm boundaries, and bite-sized workloads with spaced practice.`,
+        list: [
+            "12-hour weekday replies",
+            "Weekly check-in for each individual student",
+            "Optional monthly 1-1 consult sessions",
+            "Balanced workloads. No additional stress.",
+        ],
+        imgSrc: "/care.svg",
+        imgAlt: "Wellbeing Icon",
+    },
+    {
+        title: "We Teach What Matters",
+        text: `We pride ourselves on our high-yield, syllabus oriented teaching plan inspired by Aristole's "First Principles Thinking", which breaks complex concepts into simple fundamentals. Gain access to our concise one-page content summaries for every topic + worked examples designed to ensure performance even under exam pressure.`,
+        extraText: "No extra fluff, just simply a proven formula.",
+        imgSrc: "/gears.svg",
+        imgAlt: "Blueprint Icon",
+    },
+    {
+        title: `"Do No Harm" to Curiosity`,
+        text: `Team-Based Learning as standard. Students discuss, reason, and choose with evidence—not just guesswork.`,
+        list: [
+            "Small class sizes of 6-10 students",
+            "Focus on classroom discussions and critical thinking",
+            "Fully marked work within 72 hours with learning pointers",
+            "Nurturing environment for study and growth",
+        ],
+        imgSrc: "/collab.svg",
+        imgAlt: "Team-Based Learning Icon",
+    },
+    {
+        title: "Transparency at our Core",
+        text: `We believe in engaging fully with parents and keeping them in the loop on their child's progress every step of the way.`,
+        list: [
+            "Monthly updates (Mastery, Habits, Well-being, Next 14 days)",
+            "Termly discussions with parents",
+            "Quick replies to any enquiries",
+        ],
+        imgSrc: "/handshake.svg",
+        imgAlt: "Parents Icon",
+    },
+];
 
 export default function VivotaOath() {
     return (
-        <div className="max-w-7xl mx-auto my-16 md:my-24 lg:my-32">
-            <h1 className="text-2xl md:text-4xl text-center font-bold mb-12">The Vivota Oath</h1>
-            <h2 className="text-xl text-white text-center font-semibold mb-12 tracking-wide">Our promise to every student, parent and member of the Vivota Family.</h2>
+        <div className="max-w-7xl mx-auto my-12 md:my-24 lg:my-32 
+        px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 mt-32 md:mt-36 lg:mt-40 xl:mt-44">
+            <h1 className="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-12">
+                The Vivota Oath
+            </h1>
+            <h2 className="text-base sm:text-lg md:text-xl text-white text-center font-medium 
+            mb-16 lg:mb-20 tracking-wide">
+                <span className="block sm:inline">Our promise to every member of the{" "}</span>
+                <span className="block sm:inline">Vivota Family.</span> 
+            </h2>
 
-            <section className="py-16 px-6 md:px-24 space-y-48">
-                {/* 1. Student First */}
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                    <div className="md:w-1/2">
-                        <h2 className="text-2xl font-semibold mb-4">Student First, Syllabus Second</h2>
-                        <p className="mb-4 tracking-wide">
-                            Your child’s wellbeing takes utmost precedence. No late-night demands, clear 9am–9pm boundaries, and bite-sized workloads with spaced practice.
-                        </p>
-                        <ul className="list-disc list-inside tracking-wide">
-                            <li>12-hour weekday replies</li>
-                            <li>Weekly check-in tailored to each individual student</li>
-                            <li>Optional monthly 1-1 consult sessions (up to 30 mins)</li>
-                            <li>Balanced workloads. No additional stress.</li>
-                        </ul>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center items-center">
-                        <img src="/care.svg" alt="Wellbeing Icon" className="w-48 h-48" />
-                    </div>
-                </div>
+            <section className="space-y-24 md:space-y-28 mb-32">
+                {vivotaOathSections.map((section, idx) => (
+                    <div
+                        key={idx}
+                        className={`flex flex-col items-center gap-6 md:gap-12 md:flex-row ${idx % 2 === 1 ? "md:flex-row-reverse" : ""
+                            }`}
+                    >
+                        {/* Image on top for mobile, side for desktop */}
+                        <div className="flex justify-center items-center md:w-1/2">
+                            <img
+                                src={section.imgSrc}
+                                alt={section.imgAlt}
+                                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48"
+                            />
+                        </div>
 
-                {/* 2. We Teach What Matters */}
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                    <div className="md:w-1/2 flex justify-center items-center">
-                        <img src="/gears.svg" alt="Blueprint Icon" className="w-48 h-48" />
+                        {/* Text content below image on mobile, side-by-side on desktop */}
+                        <div className="md:px-0 md:w-1/2 text-center md:text-left">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 md:mb-4">
+                                {section.title}
+                            </h2>
+                            <p className="mb-3 md:mb-4 tracking-wide text-left text-sm sm:text-base md:text-base">
+                                {section.text}
+                            </p>
+                            {section.extraText && (
+                                <p className="font-semibold tracking-wide text-sm sm:text-base md:text-base mb-3">
+                                    {section.extraText}
+                                </p>
+                            )}
+                            {section.list && (
+                                <ul className="list-disc list-inside tracking-wide text-left text-sm sm:text-base md:text-base">
+                                    {section.list.map((item, i) => (
+                                        <li key={i} className="mb-1">
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </div>
                     </div>
-                    <div className="md:w-1/2">
-                        <h2 className="text-2xl font-semibold mb-4">We Teach What Matters</h2>
-                        <p className="mb-4 tracking-wide">
-                            We pride ourselves on our high-yield, syllabus oriented teaching plan inspired by Aristole's "First Principles Thinking", which breaks complex concepts into simple fundamentals. Gain access to our concise one-page content summaries for every topic + worked examples designed to ensure performance even under exam pressure.
-                        </p>
-                        <p className="font-semibold tracking-wide">No extra fluff, just simply a proven formula.</p>
-                    </div>
-                </div>
-
-                {/* 3. Do No Harm to Curiosity */}
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                    <div className="md:w-1/2">
-                        <h2 className="text-2xl font-semibold mb-4">"Do No Harm" to Curiosity</h2>
-                        <p className="mb-4 tracking-wide">
-                            Team-Based Learning as standard. Students discuss, reason, and choose with evidence—not just guesswork.
-                        </p>
-                        <ul className="list-disc list-inside tracking-wide">
-                            <li>Small class sizes of 6-10 students</li>
-                            <li>Focus on classroom discussions and critical thinking</li>
-                            <li>Fully marked work within 72 hours with learning pointers</li>
-                            <li>Nurturing environment for study and growth</li>
-                        </ul>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center items-center">
-                        <img src="/collab.svg" alt="Team-Based Learning Icon" className="w-48 h-48" />
-                    </div>
-                </div>
-
-                {/* 4. Keep Parents in the Loop */}
-                <div className="flex flex-col md:flex-row items-start gap-12">
-                    <div className="md:w-1/2 flex justify-center items-center">
-                        <img src="/handshake.svg" alt="Parents Icon" className="w-48 h-48" />
-                    </div>
-                    <div className="md:w-1/2">
-                        <h2 className="text-2xl font-semibold mb-4">Transparency at our Core</h2>
-                        <p className="mb-4 tracking-wide">
-                            We believe in engaging fully with parents and keeping them in the loop on their child's progress every step of the way.
-                        </p>
-                        <ul className="list-disc list-inside tracking-wide">
-                            <li>Monthly updates (Mastery, Habits, Well-being, Next 14 days)</li>
-                            <li>Termly discussions with parents</li>
-                            <li>Quick replies to any enquiries</li>
-                        </ul>
-                    </div>
-                </div>
+                ))}
             </section>
-
         </div>
-    )
-}   
+    );
+}
