@@ -70,7 +70,7 @@ export default function EnrollmentPage() {
                     >
                         <div className="flex items-center justify-center">
                             <MessageCircle className="w-6 h-6 mr-4" />
-                            <span className="text-2xl font-bold tracking-wide">9620 1021</span>
+                            <span className="text-2xl font-bold tracking-wide">8827 2531</span>
                         </div>
                     </a>
                 </div>
