@@ -17,8 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vivota",
-  description: "Tuition Agency",
+  title: "Vivota Education | Founded by Medical Students in Singapore",
+  description: `Vivota Education is a trusted tuition centre in Singapore, founded by medical school students who personally tutor. 
+  We offer affordable, high-quality tuition for Junior College students in Chemistry, Physics, Biology, Math, and General Paper to help students excel academically.`,
 };
 
 export default function RootLayout({
@@ -29,13 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className= {`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <AnimatedBackground/>
-        <Navbar/>
+        <AnimatedBackground />
+        <Navbar />
         {children}
-        <Footer/>
-      </body> 
+        <Footer />
+      </body>
     </html>
   );
 }

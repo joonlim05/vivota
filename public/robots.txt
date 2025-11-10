@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.vivotaeducation.com
+
+# Sitemaps
+Sitemap: https://www.vivotaeducation.com/sitemap.xml
