@@ -23,7 +23,7 @@ export default function TutorProfile() {
         resilience, and an appreciation for how the living world functions. I believe every student is capable of excellence, 
         and look forward to bringing out the best in your child!`,
         
-        img: "/test.jpg"
+        img: "kaiser.png"
     }
 
     return (

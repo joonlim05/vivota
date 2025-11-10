@@ -6,8 +6,8 @@ export default function IntroSection() {
     const tutors = [
         { name: "Shawn Lim", subjects: "Chemistry, Biology", img: "shawn.png", link: "/shawn-lim" },
         { name: "Tenor Ong", subjects: "Physics, General Paper", img: "tenor.png", link: "/tenor-ong" },
-        { name: "Jaryl Lee", subjects: "Math, Physics", img: "test_pic.jpg", link: "/jaryl-lee" },
-        { name: "Kaiser Tan", subjects: "Biology, Chemistry", img: "test_pic.jpg", link: "/kaiser-tan" },
+        { name: "Jaryl Lee", subjects: "Math, Physics", img: "jaryl.png", link: "/jaryl-lee" },
+        { name: "Kaiser Tan", subjects: "Biology, Chemistry", img: "kaiser.png", link: "/kaiser-tan" },
 
     ];
 

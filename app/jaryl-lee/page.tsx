@@ -18,7 +18,7 @@ export default function TutorProfile() {
         at_vivota: `At Vivota, there are no magic formulas or shortcuts to overhaul your grades overnight. However, with my
         consistent guidance backed by a robust system, I'm fully confident that you too can shine bright and overcome any
         difficulties that previously plagued you!`,
-        img: "/test.jpg"
+        img: "jaryl.png"
     }
 
     return (
