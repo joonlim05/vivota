@@ -1,7 +1,7 @@
 import { MessageCircle, CheckCircle, User, GraduationCap, BookOpen, TrendingUp, Clock, CircleDollarSign } from 'lucide-react';
 
 export default function EnrollmentPage() {
-    const whatsappNumber = "96201021";
+    const whatsappNumber = "88272531";
     const whatsappLink = `https://wa.me/65${whatsappNumber}`;
 
     const enrollmentDetails = [
