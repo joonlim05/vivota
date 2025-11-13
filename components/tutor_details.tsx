@@ -14,7 +14,7 @@ type TutorDetailsProps = {
 export default function TutorDetails({ tutor }: TutorDetailsProps) {
 
     return (
-        <div className="max-w-7xl min-h-screen mx-auto my-32 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
+        <div className="max-w-7xl min-h-screen mx-auto my-32 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14 text-white">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
                 {/* Tutor Image */}
                 <div className="flex-shrink-0 w-full md:w-1/3 flex justify-center">

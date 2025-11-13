@@ -35,7 +35,7 @@ const FooterItems: FooterItem[] = [
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-base-content">
+        <footer className="bg-zinc-950 text-base-content text-white">
             {/* Top section: Links */}
             <div className="footer sm:footer-horizontal px-20 py-10">
                 {FooterItems.map((item) => (
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom section: copyright + social icons */}
-            <div className="flex flex-col sm:flex-row justify-between items-center px-20 py-10">
+            <div className="flex flex-col sm:flex-row justify-between items-center px-20 py-10 text-white">
                 <div className="text-center sm:text-left text-gray-400 text-sm">
                     <address className="not-italic mb-4">
                         505B Bishan St 11, #01-422<br />
