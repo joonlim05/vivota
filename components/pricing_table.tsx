@@ -36,7 +36,7 @@ export default function PricingTable() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="bg-base-100 rounded-2xl shadow-xl p-8 max-w-6xl w-full">
+      <div className="bg-neutral-800 rounded-2xl shadow-xl p-8 max-w-6xl w-full">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           Vivota Class Pricing
         </h2>

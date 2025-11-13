@@ -60,7 +60,7 @@ export default function PlansPricing() {
                     {plans.map((plan) => (
                         <div
                             key={plan.name}
-                            className="card w-full max-w-sm bg-base-100 shadow-sm flex flex-col"
+                            className="card w-full max-w-sm bg-neutral-800 shadow-sm flex flex-col"
                         >
                             <div className="card-body flex flex-col h-full">
                                 {/* Title + price */}
