@@ -19,8 +19,8 @@ export default function HeroSection() {
                         {/* Top-left cell */}
                         <p className="text-lg md:text-xl text-gray-300 font-medium tracking-wide 
                         leading-snug text-center md:text-left whitespace-nowrap">
-                            <span className="block md:py-1">Venture Today,</span>
-                            <span className="block text-yellow-600">Victory Tomorrow</span>
+                            <span className="block md:py-1">Founded and Taught by</span>
+                            <span className="block text-yellow-600">Singapore Medical Students</span>
                         </p>
 
                         {/* Top-right cell */}
@@ -34,7 +34,7 @@ export default function HeroSection() {
                             <div className="flex items-start gap-2">
                                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
                                 <p className="text-sm md:text-base font-medium text-white transition-colors">
-                                    8827 2531
+                                    8035 7523
                                 </p>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ export default function HeroSection() {
                     <div className="hidden xl:flex xl:flex-col xl:w-full xl:gap-6">
                         {/* Motto */}
                         <p className="text-3xl text-gray-300 font-medium tracking-wide leading-snug">
-                            <span className="block">Venture Today,</span>
-                            <span className="block text-yellow-600">Victory Tomorrow</span>
+                            <span className="block">Founded and Taught by</span>
+                            <span className="block text-yellow-600">Singapore Medical Students</span>
                         </p>
 
                         {/* Contact Info */}
@@ -72,7 +72,7 @@ export default function HeroSection() {
                             <div className="flex items-start gap-2">
                                 <Phone className="w-4 h-4 text-white flex-shrink-0" />
                                 <p className="text-base font-medium text-white transition-colors">
-                                    80357523
+                                    8035 7523
                                 </p>
                             </div>
                         </div>
