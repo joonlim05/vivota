@@ -8,7 +8,7 @@ const navbarItems = [
         label: "About Us",
         dropdown: [
             { label: "The Vivota Oath", href: "/vivota-oath" },
-            { label: "The Vivota System", href: "/vivota-system" },
+            { label: "The Vivota Learning System", href: "/vivota-system" },
         ],
     },
     {

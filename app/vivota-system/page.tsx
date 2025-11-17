@@ -15,21 +15,21 @@ export default function VivotaSystem() {
 
     const sessions: Session[] = [
         {
-            title: "Session 1: Teach & Distil",
+            title: "Session 1: Concept Class",
             points: [
-                { sub: "High-yield delivery:", text: "Syllabus-aligned teaching, stripped of fluff and explained through first principles." },
-                { sub: "Clarity Pack (same day):", text: "A clean one-pager, worked examples, and a brief model answer where helpful." },
-                { sub: "Micro-prep (20–30 min):", text: "Light homework + a five-questions readiness check to seed the next quiz." }
+                { sub: "High-yield Delivery:", text: "Syllabus-aligned teaching, stripped of fluff and explained through first principles." },
+                { sub: "Interactive Discussion:", text: "Class discussion led by content experts, ensuring that no student is left out" },
+                { sub: "Prep for Session 2:", text: "Light homework (individual quiz) to seed the next lesson." }
             ],
         },
 
         {
-            title: "Session 2: Dispel & Reinforce",
+            title: "Session 2: Team Session",
             points: [
-                { sub: "IRAT Quiz:", text: "Individual quiz before class to identify knowledge gaps" },
-                { sub: "TRAT Quiz:", text: "Team quiz in class with instant feedback and rationale sheets" },
-                { sub: "Questions Clinic:", text: " Shoot your questions. We will rapidly debunk misconceptions" },
-                { sub: " Application Exercise (AE):", text: "Model answers simulated under exam timing + debrief" }
+                { sub: "Individual Quiz:", text: "Should be attempted before class to identify knowledge gaps" },
+                { sub: "Team Discussion:", text: "Team quiz in class with instant feedback and rationale sheets" },
+                { sub: "Questions Clinic:", text: "Students shoot questions. Content Experts debunk misconceptions" },
+                { sub: " Application Exercise (AE):", text: "The most challenging questions will be tackled and led by Content Experts" }
             ],
         }
     ];
@@ -40,7 +40,7 @@ export default function VivotaSystem() {
             {/* Hero Section */}
             <div className="flex flex-col items-center">
                 <h1 className="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-12">
-                    The Vivota System
+                    The Vivota Learning System
                 </h1>
                 <div className="scale-60 md:scale-80 2xl:scale-100">
                     <Carousel />
@@ -50,21 +50,12 @@ export default function VivotaSystem() {
             {/* In a Nutshell */}
             <div className="flex justify-center">
                 <div className="flex flex-col text-white lg:flex-row justify-center items-center gap-8 md:gap-12">
-                    <img src="/trophy.svg" className="w-24 md:w-32 lg:w-48 max-w-full" />
+                    <img src="/trophy.svg" className="w-20 md:w-30 lg:w-40 max-w-full" />
                     <div>
                         <p className="font-bold text-base md:text-lg leading-relaxed md:leading-loose">
                             Here at Vivota, we don’t “treat” low grades by spamming more worksheets
-                            or yapping non-stop. We use a structured approach modelled from the study
-                            methods we use daily in medical school.{" "}
-                            <span className="block mt-6 md:inline md:mt-0">As doctors-to-be, we are taking
-                                on the dual responsibilites of diagnosing our students' knowledge gaps
-                                while also being relatable mentors/seniors who are willing to lend a helping
-                                hand even outside of tuition (feel free to chat with us, we dont bite!)
-                            </span>
-                        </p>
-                        <p className="font-bold text-base md:text-lg leading-relaxed md:leading-loose mt-6 md:mt-8">
-                            We are fully committed to the long run and invested in our students' journey
-                            both as an educator and simply as a friend.
+                            or yapping non-stop. We typically run in a two-session cycle, inspired by scientifically proven techniques
+                            modelled after the methods used in medical school.
                         </p>
                     </div>
                 </div>
@@ -110,11 +101,12 @@ export default function VivotaSystem() {
                         <ul className="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
                             <li>
                                 <span className="block md:inline font-semibold text-gray-900">Rapid Active Recall:{" "}</span>
-                                IRAT and TRAT Quizzes build the ability to quickly retrieve information under timed conditions.
+                                Individual quizzes build the ability to review current knowledge. Team Discussions enable students
+                                 to work together in teams to generate ideas and exchange knowledge.
                             </li>
                             <li>
                                 <span className="block md:inline font-semibold text-gray-900">Realistic Wargaming:{" "}</span>
-                                AE mirrors the toughest A-level questions, enhancing performance.
+                                AE mirrors the toughest exam-style questions, for all students to unlock their full potential.
                             </li>
                             <li>
                                 <span className="block md:inline font-semibold text-gray-900">Tight Feedback Loop:{" "}</span>
