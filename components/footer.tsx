@@ -38,48 +38,67 @@ const FooterItems: FooterItem[] = [
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-base-content text-white">
+        <footer className="bg-zinc-950 text-white">
             {/* Top section: Links */}
-            <div className="footer sm:footer-horizontal px-20 py-10">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 px-20 py-10">
                 {FooterItems.map((item) => (
                     <nav key={item.label}>
-                        <h6 className="footer-title">{item.label}</h6>
-                        {item.dropdown
-                            ? item.dropdown.map((subItem) => (
-                                <Link
-                                    key={subItem.label}
-                                    href={subItem.href}
-                                    className="link link-hover"
-                                >
-                                    {subItem.label}
-                                </Link>
-                            ))
-                            : item.href && (
-                                <Link href={item.href} className="link link-hover">
-                                    {item.label}
-                                </Link>
-                            )}
+                        <h6 className="font-bold text-base uppercase mb-3 opacity-90">
+                            {item.label}
+                        </h6>
+                        <div className="flex flex-col gap-2">
+                            {item.dropdown
+                                ? item.dropdown.map((subItem) => (
+                                    <a
+                                        key={subItem.label}
+                                        href={subItem.href}
+                                        className="text-sm opacity-70 hover:opacity-100 hover:underline transition-opacity"
+                                    >
+                                        {subItem.label}
+                                    </a>
+                                ))
+                                : item.href && (
+                                    <a
+                                        href={item.href}
+                                        className="text-sm opacity-70 hover:opacity-100 hover:underline transition-opacity"
+                                    >
+                                        {item.label}
+                                    </a>
+                                )}
+                        </div>
                     </nav>
                 ))}
             </div>
 
             {/* Bottom section: copyright + social icons */}
-            <div className="flex flex-col sm:flex-row justify-between items-center px-20 py-10 text-white">
+            <div className="flex flex-col sm:flex-row justify-between items-center px-20 py-10 border-t border-zinc-800">
                 <div className="text-center sm:text-left text-gray-400 text-sm">
                     <address className="not-italic mb-4">
                         <span className="block sm:inline">505B Bishan St 11,{" "}</span>
                         <span>#01-422</span>
-                        <a href="tel:+6512345678" className="link link-hover block">
+                        <a
+                            href="tel:+6512345678"
+                            className="block hover:underline hover:text-white transition-colors"
+                        >
                             +65 8035 7523
                         </a>
                     </address>
                     <p>&copy; {new Date().getFullYear()} Vivota Pte. Ltd.</p>
                     <p>All rights reserved.</p>
                 </div>
-                <div className="grid grid-flow-col gap-4 mt-4 sm:mt-0">
-                    {/*For social media links*/}
+                <div className="flex gap-4 mt-4 sm:mt-0">
+                    {/* Social media icons */}
+                    <a href="https://wa.me/6580357523" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Whatsapp">
+                        <img src="/whatsapp.svg" className="w-4 sm:w-6" />
+                    </a>
+                    <a href="https://www.instagram.com/vivota.education" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                        <img src="/instagram.svg" className="w-4 sm:w-6" />
+                    </a>
+                    <a className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                        <img src="/tiktok.svg" className="w-4 sm:w-6" />
+                    </a>
                 </div>
             </div>
         </footer>
-    )
+    );
 }

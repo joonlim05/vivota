@@ -1,35 +1,6 @@
-import { MessageCircle, CheckCircle, User, GraduationCap, BookOpen, TrendingUp, Clock, CircleDollarSign } from 'lucide-react';
-
 export default function EnrollmentPage() {
     const whatsappNumber = "80357523";
     const whatsappLink = `https://wa.me/65${whatsappNumber}`;
-
-    const enrollmentDetails = [
-        {
-            icon: <User className="w-5 h-5" />,
-            title: "Full Name",
-        },
-        {
-            icon: <GraduationCap className="w-5 h-5" />,
-            title: "School & Level",
-        },
-        {
-            icon: <CircleDollarSign className="w-5 h-5" />,
-            title: "Plan",
-        },
-        {
-            icon: <BookOpen className="w-5 h-5" />,
-            title: "Subjects",
-        },
-        {
-            icon: <Clock className="w-5 h-5" />,
-            title: "Timeslots",
-        },
-        {
-            icon: <TrendingUp className="w-5 h-5" />,
-            title: "Current Grades",
-        }
-    ];
 
     return (
         <div className="max-w-7xl mx-auto my-18 md:my-34 lg:my-38 px-8 sm:px-10 md:px-12 lg:px-14">
@@ -55,7 +26,7 @@ export default function EnrollmentPage() {
                         py-4 px-6 rounded-lg font-semibold text-lg transition-all transform hover:scale-102 shadow-lg"
                 >
                     <div className="flex items-center justify-center">
-                        <MessageCircle className="w-6 h-6 mr-4" />
+                        <img src="/whatsapp.svg" className="w-6 mr-4" />
                         <span className="text-2xl font-bold tracking-wide">8035 7523</span>
                     </div>
                 </a>
