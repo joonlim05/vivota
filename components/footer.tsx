@@ -29,6 +29,7 @@ const FooterItems: FooterItem[] = [
         dropdown: [
             { label: "Plans and Pricing", href: "/plans-and-pricing" },
             { label: "Class Schedule", href: "/class-schedule" },
+            { label: "Contact Us", href: "/contact-us" },
         ],
     },
 ];
