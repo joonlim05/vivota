@@ -4,7 +4,7 @@ export default function TutorProfile() {
 
     const tutor = {
         name: "Shawn Lim",
-        subjects: "Chemistry (Lead CE) & Biology",
+        subjects: "Chemistry (Lead Tutor) & Biology",
         highlights: [
             "Singapore Medical Student",
             "Tutored 50+ students privately since 2022",

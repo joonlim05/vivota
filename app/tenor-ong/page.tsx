@@ -4,7 +4,7 @@ export default function TutorProfile() {
 
     const tutor = {
         name: "Tenor Ong",
-        subjects: "Physics & General Paper (Dual Lead CE)",
+        subjects: "Physics & General Paper (Dual Lead Tutor)",
         highlights: [
             "Singapore Medical Student with OCBC Scholarship",
             "Tutored 40+ students privately since 2023",

@@ -30,8 +30,8 @@ export default function TutorDetails({ tutor }: TutorDetailsProps) {
                     <h1 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-500">{tutor.name}</h1>
                     <h2 className="text-xl md:text-2xl font-bold mb-12 tracking-wide">{tutor.name === "Tenor Ong" ? (
                         <>
-                            {tutor.subjects.split(" (Dual Lead CE)")[0]}
-                            <span className="block"> (Dual Lead CE) </span>
+                            {tutor.subjects.split(" (Dual Lead Tutor)")[0]}
+                            <span className="block"> (Dual Lead Tutor) </span>
                         </>
                     ) : (
                         tutor.subjects

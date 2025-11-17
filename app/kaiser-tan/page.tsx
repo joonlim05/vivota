@@ -4,7 +4,7 @@ export default function TutorProfile() {
 
     const tutor = {
         name: "Kaiser Tan",
-        subjects: "Biology (Lead CE) & Chemistry",
+        subjects: "Biology (Lead Tutor) & Chemistry",
         highlights: [
             "Singapore Medical Student",
             "Tutored 30+ students privately since 2023",

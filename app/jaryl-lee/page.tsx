@@ -4,7 +4,7 @@ export default function TutorProfile() {
 
     const tutor = {
         name: "Jaryl Lee",
-        subjects: "Math (Lead CE) & Physics",
+        subjects: "Math (Lead Tutor) & Physics",
         highlights: [
             "Singapore Medical Student",
             "Tutored 40+ students privately since 2023",
