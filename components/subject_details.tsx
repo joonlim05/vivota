@@ -21,12 +21,12 @@ export type SubjectDetailsProps = {
 
 export default function SubjectDetails({ subject, keyFeatures, topics, methods }: SubjectDetailsProps) {
     return (
-        <div className="max-w-7xl mx-auto my-32 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
+        <div className="max-w-7xl mx-auto my-16 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
             {/* Hero Section */}
             <div className="container mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6 my-16 md:my-0">
-                        <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
                             Master {subject.type} Through {" "}
                             <span className="text-yellow-400">{subject.method}</span>
                         </h1>

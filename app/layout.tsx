@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Cabin } from 'next/font/google';
 import "./globals.css";
 import Footer from "@/components/footer";
 import AnimatedBackground from "@/components/animated_bg";
@@ -16,6 +17,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const cabin = Cabin({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-cabin',
+});
+
 export const metadata: Metadata = {
   title: "Vivota Education | Founded by Medical Students in Singapore",
   description: `Vivota Education is a trusted tuition centre in Singapore, founded by medical school students who personally tutor. 
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${cabin.variable} antialiased `}
       >
         <AnimatedBackground />
         <Navbar />

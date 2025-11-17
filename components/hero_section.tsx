@@ -8,7 +8,7 @@ export default function HeroSection() {
                 <div className="flex flex-col justify-center items-center text-center xl:items-start xl:text-left xl:w-1/2 space-y-6">
 
                     {/* Header */}
-                    <p className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight 
+                    <p className="text-5xl xl:text-6xl font-extrabold tracking-tight leading-tight 
                     bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-200 text-transparent bg-clip-text drop-shadow-md">
                         VIVOTA EDUCATION
                     </p>
