@@ -26,7 +26,7 @@ export default function MissionStatement() {
                 </h2>
 
                 <p className="text-base md:text-lg 2xl:text-xl my-3 sm:my-5 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                    A place where learning feels alive, even while preparing for A-Levels
+                    Where learning feels alive.
                 </p>
             </div>
 
