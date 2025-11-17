@@ -26,7 +26,7 @@ export default function HeroSection() {
                     </p>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col md:flex-row gap-4 pt-2 md:mb-4">
+                    <div className="flex flex-col md:flex-row gap-4 xl:gap-6 pt-2 md:mb-4">
                         <Link href="/contact-us">
                             <button
                                 className=" px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-400 to-yellow-500 

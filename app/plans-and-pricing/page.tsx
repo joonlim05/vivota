@@ -113,7 +113,10 @@ export default function PlansPricing() {
 
                                 <div className="mt-auto pt-6">
                                     <Link href="/contact-us">
-                                        <button className="btn btn-warning btn-block">
+                                        <button
+                                            className="bg-yellow-500 text-black font-semibold px-6 py-3
+                                             rounded-lg hover:bg-yellow-600 transition-colors duration-200 w-full"
+                                        >
                                             Enrol Now
                                         </button>
                                     </Link>
