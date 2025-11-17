@@ -13,10 +13,10 @@ export default function PricingTable() {
       emoji: null,
       color: "text-orange-400",
       pricing: [
-        { original: 500, discounted: 440, hourly: "55" },
-        { original: 900, discounted: 850, hourly: "53.10" },
-        { original: 1300, discounted: 1280, hourly: "50.80" },
-        { original: 1600, discounted: 1500, hourly: "46.80" }
+        { original: 500, discounted: 250, hourly: "31.25" },
+        { original: 900, discounted: 450, hourly: "28.13" },
+        { original: 1300, discounted: 650, hourly: "27.08" },
+        { original: 1600, discounted: 800, hourly: "25.00" }
       ]
     },
     {
