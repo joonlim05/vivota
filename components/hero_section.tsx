@@ -15,13 +15,13 @@ export default function HeroSection() {
                     </p>
 
                     {/* Motto */}
-                    <p className="text-lg sm:text-xl xl:text-2xl text-gray-300 font-medium tracking-wide leading-snug">
+                    <p className="text-lg sm:text-xl xl:text-2xl text-gray-200 font-medium tracking-wide leading-snug">
                         <span className="block">Founded and Taught by</span>
                         <span className="block text-yellow-600">Singapore Medical Students</span>
                     </p>
 
                     {/* Location */}
-                    <p className="text-base sm:text-lg xl:text-xl font-medium text-white">
+                    <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
                         <span className="block">JC Education Centre</span>
                         <span className="block">3 minutes away from Bishan MRT</span>
                     </p>
