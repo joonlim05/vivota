@@ -81,8 +81,8 @@ export default function TestimonialCarousel() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-3">Student Testimonials</h2>
-                    <p className="text-lg">Hear what our students have to say</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold my-4 sm:my-6">Student Testimonials</h2>
+                    <p className="text-base md:text-lg 2xl:text-xl">Hear what our students have to say</p>
                 </div>
 
                 {/* Carousel Container */}

@@ -16,11 +16,11 @@ export default function SubjectsSection() {
                 Our JC Courses
             </h1>
             <div className="py-8 lg:py-12">
-                <h2 className="text-sm sm:text-base md:text-lg 2xl:text-xl text-white text-center tracking-wide mb-4 lg:mb-8">
+                <h2 className="text-base md:text-lg 2xl:text-xl text-white text-center tracking-wide mb-4 lg:mb-8">
                     <span className="block lg:inline">Vivota specialises in delivering quality education{" "}</span>
                     <span className="block lg:inline">tailored for Junior College students.</span>
                 </h2>
-                <h2 className="text-sm sm:text-base md:text-lg 2xl:text-xl text-white text-center tracking-wide">
+                <h2 className="text-base md:text-lg 2xl:text-xl text-white text-center tracking-wide">
                     <span className="block md:inline">Explore the 5 subjects taught in-depth{" "}</span>
                     <span className="block md:inline">by our Content Experts!</span>
                 </h2>
