@@ -16,7 +16,7 @@ const plans = [
     },
     {
         name: "Standard",
-        price: "$440",
+        price: "$250",
         duration: "(4 lessons x 2hrs)",
         strike: "$500",
         highlight: false,
