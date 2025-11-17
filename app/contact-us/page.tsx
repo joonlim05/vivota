@@ -32,7 +32,7 @@ export default function EnrollmentPage() {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto my-32 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
+        <div className="max-w-7xl mx-auto my-18 md:my-34 lg:my-38 px-8 sm:px-10 md:px-12 lg:px-14">
 
             <div className="container mx-auto flex flex-col items-center">
                 {/* Header Section */}
@@ -64,7 +64,7 @@ export default function EnrollmentPage() {
             {/* Footer Note */}
             <div className="text-center font-semibold space-y-2 py-16">
                 <p className="text-sm md:text-base mb-4">
-                    Our team will respond to your message within 24 hours to confirm your enrollment.
+                    Our team will respond to your message as soon as possible to confirm your enrollment.
                 </p>
                 <p className="text-sm md:text-base">
                     Thank you for choosing Vivota Education!
