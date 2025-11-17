@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
 
 export default function HeroSection() {
     return (
         <>
-            <section className="min-h-screen flex flex-col xl:flex-row items-center justify-center w-full text-white px-8 xl:px-48 pt-24 sm:pt-28 md:pt-36">
+            <section className="min-h-screen flex flex-col xl:flex-row items-center justify-center w-full text-white px-8 xl:px-48 pt-24 sm:pt-30 md:pt-36">
                 {/* Text container */}
                 <div className="flex flex-col justify-center items-center text-center xl:items-start xl:text-left xl:w-1/2 space-y-6">
 
