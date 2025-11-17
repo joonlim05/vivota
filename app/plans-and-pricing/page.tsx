@@ -15,7 +15,7 @@ const plans = [
         ],
     },
     {
-        name: "Rotation",
+        name: "Standard",
         price: "$440",
         duration: "(4 lessons x 2hrs)",
         strike: "$500",
@@ -34,7 +34,7 @@ const plans = [
         highlight: true,
         icon: "flame.svg",
         benefits: [
-            "Everything in Rotation",
+            "Everything in Standard",
             "Personalised Mastery Action Plan",
             "Priority 1-1 consult booking",
             "Content Summaries for every topic",

@@ -9,7 +9,7 @@ export default function PricingTable() {
       ]
     },
     {
-      name: "Rotation",
+      name: "Standard",
       emoji: null,
       color: "text-orange-400",
       pricing: [
