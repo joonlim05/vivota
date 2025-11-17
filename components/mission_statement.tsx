@@ -8,24 +8,24 @@ export default function MissionStatement() {
                 Vivota's Core Mission
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg 2xl:text-xl my-4 sm:my-6 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                Vivota exists because students deserve more than just syllabus coverage.
-                As both doctors-to-be and educational specialists, we’re here to diagnose learning gaps
-                and provide timely support for students to ace their exams.
+            <p className="text-sm sm:text-base md:text-lg 2xl:text-xl mt-4 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
+                JC students don’t need more content; they need clearer plans, faster feedback,
+                and adults who actually keep track. As doctors-in-training and educators, we built
+                Vivota to diagnose learning gaps and give structured, calm support week by week through the Vivota System.
             </p>
 
-            <p className="text-sm sm:text-base md:text-lg 2xl:text-xl my-2 sm:my-4 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                We believe calm beats cram, small wins compound, and learners who feel seen always learn better.
-                Our Vivota System guides students step-by-step, sparking curiosity while covering the syllabus.
-            </p>
+            <ul className="text-sm sm:text-base md:text-lg 2xl:text-xl my-12 px-4 sm:px-8 leading-relaxed tracking-wide list-disc list-inside space-y-4 text-center sm:text-left">
+                <li><strong>Calm over cram</strong> — personalised, steady, actionable study plans instead of last-minute panic.</li>
+                <li><strong>Small wins that compound</strong> — regular check-ins and specific targets, not just “do more papers”.</li>
+                <li><strong>Treating the student, not just the syllabus</strong> — wellbeing, habits, and workload tracked alongside marks so progress&nbsp;is&nbsp;sustainable.</li>
+            </ul>
 
-            <h2 className="text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold my-3 sm:my-5 leading-relaxed tracking-wide text-center">
+            <h2 className="text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold leading-relaxed tracking-wide text-center">
                 Vivota: <span className="italic">vivo ("to live") + ta ("a place")</span>
             </h2>
 
             <p className="text-sm sm:text-base md:text-lg 2xl:text-xl my-3 sm:my-5 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                Our vision is for Vivota to be an exciting place where students can feel alive,
-                even while preparing for the A Levels. Life is more than just academics!
+                A place where learning feels alive, even while preparing for A-Levels
             </p>
 
             <div className="text-center my-4 sm:my-6">
