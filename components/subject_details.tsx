@@ -126,7 +126,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold mb-8 text-black text-center">The Vivota Difference</h2>
                         <div className="prose prose-lg prose-invert">
-                            <p className="leading-relaxed text-black tracking-wide leading-loose font-medium">
+                            <p className="leading-relaxed text-black tracking-wide leading-loose font-medium lg:text-lg">
                                 {subject.description}
                             </p>
                         </div>
