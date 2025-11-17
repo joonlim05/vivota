@@ -57,7 +57,7 @@ export default function DesktopNavbar({ navbarItems }: Props) {
                                         onClick={() =>
                                             setOpenDropdown(openDropdown === item.label ? null : item.label)
                                         }
-                                        className="text-sm md:text-base font-semibold text-black/70 hover:text-black"
+                                        className="text-base xl:text-lg font-semibold text-black/70 hover:text-black"
                                     >
                                         {item.label}
                                     </button>
@@ -84,7 +84,7 @@ export default function DesktopNavbar({ navbarItems }: Props) {
                             ) : (
                                 <Link
                                     href={item.href!}
-                                    className="text-sm md:text-base font-semibold text-black/70 hover:text-black"
+                                    className="text-base xl:text-lg font-semibold text-black/70 hover:text-black"
                                 >
                                     {item.label}
                                 </Link>

@@ -8,10 +8,10 @@ export default function EnrollmentPage() {
             <div className="container mx-auto flex flex-col items-center">
                 {/* Header Section */}
                 <div className="text-center py-16">
-                    <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-snug">
                         Contact us to book your seat today
                     </h1>
-                    <p className="text-base md:text-base font-semibold max-w-2xl mx-auto">
+                    <p className="text-base md:text-lg lg:text-xl font-semibold max-w-2xl mx-auto">
                         Start your journey to academic excellence with one simple step
                     </p>
                 </div>
@@ -34,10 +34,10 @@ export default function EnrollmentPage() {
 
             {/* Footer Note */}
             <div className="text-center font-semibold space-y-2 py-16">
-                <p className="text-sm md:text-base mb-4">
+                <p className="text-sm md:text-base lg:text-lg mb-4">
                     Our team will respond to your message as soon as possible to confirm your enrollment.
                 </p>
-                <p className="text-sm md:text-base">
+                <p className="text-sm md:text-base lg:text-lg ">
                     Thank you for choosing Vivota Education!
                 </p>
             </div>

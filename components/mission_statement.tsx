@@ -21,7 +21,7 @@ export default function MissionStatement() {
             </ul>
 
             <div>
-                <h2 className="text-base md:text-lg 2xl:text-xl font-semibold leading-relaxed tracking-wide text-center">
+                <h2 className="sm:text-lg md:text-xl 2xl:text-2xl font-semibold leading-relaxed tracking-wide text-center">
                     Vivota: <span className="italic">vivo ("to live") + ta ("a place")</span>
                 </h2>
 
