@@ -5,12 +5,11 @@ export default function GeneralPaperPage() {
     const subject = {
         type: "General Paper",
         method: "Critical Thinking",
-        description: `At Vivota, H1 General Paper is taught as the art of clear thinking and precise expression. 
-We train students to unpack questions methodically, frame balanced arguments, evaluate deeply, and write with structure and purpose. 
-Every essay begins with understanding — identifying assumptions, defining key terms, and mapping the logic before drafting. 
-We build linguistic control through targeted practice: sharpening phrasing, tightening transitions, and expanding the range of examples that anchor ideas in reality. 
-Comprehension lessons focus on analysing tone, perspective, and intent, not just finding answers. 
-Through this process, students learn to think critically, write persuasively, and engage the world with clarity, confidence, and calm.`,
+        description: `At Vivota, GP isn’t about memorising essays or big words, it's about learning to think logically and critically.
+         We teach students how to generate ideas, analyse questions, and use simple thinking frameworks that give their writing direction
+          and purpose. Instead of going in circles or “smoking” arguments, they learn to evaluate properly, take a position, and support 
+          it with clarity. Over time, these skills become second nature, and students will be able to link ideas naturally, choose examples 
+          appropriately and evaluate with depth and nuance.`,
         blurb: `Learn to think critically, write persuasively, and express complex ideas with clarity and precision.`,
         cta: `master the art of reasoning and expression for every argument`,
         img: "/gp.svg"
@@ -40,22 +39,22 @@ Through this process, students learn to think critically, write persuasively, an
     ];
 
     const topics = [
-        "Essay Writing & Argumentation",
-        "Critical Reading & Comprehension",
-        "Issue Analysis & Evaluation",
-        "Global & Societal Themes",
-        "Language & Expression",
-        "Evidence & Example Crafting",
-        "Tone & Perspective Analysis"
+        "Science & Technology",
+        "Philosophical & Ethical",
+        "Media",
+        "Social",
+        "Governance & Geopolitical",
+        "The Arts & Culture",
+        "Environmental"
     ];
 
     const methods = [
-        "Question deconstruction and reverse-engineering",
-        "Argument framing and counter-argument building",
-        "Precision phrasing with stylistic control",
-        "Example development and contextualisation",
-        "Tone and perspective analysis",
-        "Logic flow structuring"
+        "Question selection & analysis",
+        "Essay planning",
+        "Idea generation",
+        "Balanced writing",
+        "Evaluative skills",
+        "Understanding nuance"
     ];
 
     return (

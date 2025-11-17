@@ -6,15 +6,11 @@ export default function PhysicsPage() {
         type: "Physics",
         method: "Model Building",
 
-        description: `At Vivota, H2 Physics is taught as model building for prediction. 
-    You will learn to state assumptions, define variables, and turn words into diagrams and equations; 
-    then you pose a hypothesis, derive the relationship, test limiting cases and dimensions, estimate orders of magnitude, 
-    and check against data. We train transfer to novel contexts by planning before calculation: 
-    choose the governing principles (forces, energy, momentum, fields), pick a clean representation (free-body, energy bar, field lines),
-    and track units and signs to a conclusive result. We also braid ideas across mechanics, waves, electricity and magnetism, 
-    and thermal physics. We pull in calculus, vectors, graphs, and uncertainty from math so one context can be solved from multiple angles. 
-    Through this process, students learn to make predictions and put forward scientific hypotheses, apply principles to new situations,
-    and bring concepts together into clear, exam-ready arguments.`,
+        description: `At Vivota, Physics is not about memorising every formula, it is about knowing where every formula comes from. 
+        We train you to derive key results from first principles, starting with clean definitions and simple models, then building up
+        to exam-level applications. When you see a new question, you will not panic and resort to guessing: you will break it into basic ideas, recombine
+        a few familiar relationships, and rebuild the solution from the ground up. That is how formulas that used to be just random things you memorised
+        without thinking, become tools you can flex and bend to your will across any exam.`,
 
         blurb: `Learn to predict, hypothesize, and solve complex problems by building robust mental models that transfer across contexts.`,
         cta: `master the art of model-building for real-world problem solving`,
@@ -45,21 +41,20 @@ export default function PhysicsPage() {
     ];
 
     const topics = [
-        "Mechanics & Forces",
-        "Energy Systems",
-        "Momentum",
-        "Fields & Electromagnetism",
-        "Waves & Oscillations",
-        "Thermal Physics"
+        "Newtonian Mechanics",
+        "Oscillations and Waves",
+        "Electromagnetism",
+        "Thermal Physics",
+        "Modern Physics",
     ];
 
     const methods = [
-        "Free-body diagrams",
-        "Energy bar charts",
-        "Field line representations",
-        "Vector analysis",
-        "Calculus integration",
-        "Dimensional analysis"
+        "Fundamental principles",
+        "Formula derivations",
+        "Explanation frameworks",
+        "Graphical drawing",
+        "Free body diagrams",
+        "Mathematical manipulation"
     ];
 
     return (

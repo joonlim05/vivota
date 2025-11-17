@@ -5,11 +5,11 @@ export default function BiologyPage() {
     const subject = {
         type: "Biology",
         method: "Systemic Storytelling",
-        description: `At Vivota, H2 Biology is taught as storytelling through systems — understanding how molecular details give rise to life’s patterns. 
-We begin with mechanisms: genes expressing proteins, enzymes catalysing reactions, membranes controlling movement. 
-From there, we scale up — from cells to organs, organisms to ecosystems — always tracing how structure supports function. 
-Lessons emphasise conceptual flow over memorisation: constructing cause-and-effect chains, visualising pathways, and linking processes across topics. 
-Through this process, students learn to connect ideas across scales, reason like biologists, and explain life’s complexity with precision and insight.`,
+        description: `At Vivota, Biology is not about spending hours staring at thick stacks of notes but rather about understanding
+         the intricacies behind each and every system within the syllabus. Vivota trains each student to think like a clinician-scientist, 
+         to trace the mechanism, identify the key variable, and reason based on cause and effect. In line with Vivota’s approach, content simply
+          becomes conceptual tools you can apply across not only MCQs, but also data-based questions, and essays. With time, biology stops being 
+          a torturous subject of rote memorisation.It becomes a fun, solvable and predictable puzzle that waits to be discovered.`,
         blurb: `Learn to connect molecular mechanisms to living systems and explain biological complexity with clarity and logic.`,
         cta: `master the art of explaining life through interconnected systems`,
         img: "/biology.svg"
@@ -39,23 +39,21 @@ Through this process, students learn to connect ideas across scales, reason like
     ];
 
     const topics = [
-        "Molecular Genetics",
-        "Cell Structure & Function",
-        "Enzymes & Metabolism",
-        "Membranes & Transport",
-        "Homeostasis & Coordination",
-        "Genetics & Inheritance",
-        "Ecology & Ecosystems",
-        "Evolution & Biodiversity"
+        "The Cell and Biomolecules of Life",
+        "Genetics and Inheritance",
+        "Energy and Equilibrium",
+        "Biological Evolution",
+        "Infectious Diseases",
+        "Impact of Climate Change on Animals and Plants",
     ];
 
     const methods = [
-        "Pathway mapping and flow diagrams",
-        "Cause-and-effect chain construction",
-        "Structure–function analysis",
-        "System interaction modeling",
-        "Data interpretation",
-        "Experimental design reasoning"
+        "First-principles biological models",
+        "Cause-and-effect chains",
+        "Mechanism mapping",
+        "Graph & data interpretation",
+        "Experimental reasoning",
+        "Error-spotting and hypothesis testing"
     ];
 
     return (

@@ -4,15 +4,12 @@ import { FlaskConical, Lightbulb, Scale, Zap } from 'lucide-react';
 export default function ChemistryPage() {
     const subject = {
         type: "Chemistry",
-        method: "Analytical Thinking",
+        method: "Intellectual Stimulation",
 
-        description: `At Vivota, H2 Chemistry is taught as logic applied to matter — the study of how particles interact, transform, and reach balance. 
-        We focus on building models that explain, not memorise: using bonding, energetics, and kinetics to predict what happens and why. 
-        Students learn to reason from first principles, applying quantitative tools to support qualitative understanding. 
-        Each topic is tied together by recurring ideas — equilibrium, energy change, structure, and charge — so that chemical behaviour feels coherent, not compartmentalised. 
-        Practical and data-based questions train interpretation and justification: reading graphs, evaluating experiments, and explaining anomalies. 
-        Through this process, students learn to see chemistry as a language of reasoning, to think, quantify, and communicate like scientists.`,
-
+        description: `At Vivota, we believe that all students should look forward to every Chemistry lesson. Students are not taught just to memorise
+         facts and details, but also to appreciate the subject matter and how it applies in daily life. We believe in purposeful learning that is
+          thought–provoking, intellectually stimulating, and exciting. We believe that each and every student at Vivota can do well for Chemistry, 
+          if they are daring enough to try. After all, chem–is–try.`,
         blurb: `Learn to reason from chemical principles, link ideas across topics, and explain the intricacies of chemistry with logic and evidence.`,
         cta: `master the logic behind how matter interacts and transforms`,
         img: "/chemistry.svg"
@@ -42,21 +39,21 @@ export default function ChemistryPage() {
     ];
 
     const topics = [
-        "Atomic Structure & Periodicity",
-        "Chemical Bonding",
-        "Energetics & Thermodynamics",
-        "Kinetics",
-        "Redox & Electrochemistry",
+        "Structure and Properties",
+        "Transformations",
+        "Chemistry of Aqueous Solutions",
         "Organic Chemistry",
+        "Electrochemistry",
+        "Transition Elements",
     ];
 
     const methods = [
-        "Energy level diagrams",
-        "Reaction pathway modeling",
-        "Hess's Law analysis",
-        "Rate graph interpretation",
-        "Stoichiometric reasoning",
-        "Data evaluation"
+        "Content mastery",
+        "Conceptual understanding",
+        "Higher–order thinking",
+        "Pattern recognition",
+        "Data evaluation",
+        "Clinician–style reasoning"
     ];
 
     return (

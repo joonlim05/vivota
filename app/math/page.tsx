@@ -5,10 +5,11 @@ export default function MathPage() {
     const subject = {
         type: "Math",
         method: "Structural Reasoning",
-        description: `At Vivota, H2 Math is taught for understanding, not memory — we derive results, link ideas, and move between algebraic, graphical, geometric, and verbal views so concepts transfer. 
-You plan before you compute, state conditions precisely, and write clean, markscheme-ready working. 
-We train H3-level habits — proof thinking, structure spotting, bounding and estimation — so critical and out-of-the-box thinking becomes routine. 
-The result is flexible, rigorous problem solving that holds under exam pressure.`,
+        description: `At Vivota, we don’t teach you to guess the topic and throw a formula at it. We teach you how to think.
+         You first pin down exactly what the question wants, then plan the path: choose the right ideas, decide what you need 
+         to find along the way, and work backwards from the goal to the information given. Over time this becomes a simple, 
+         repeatable problem-solving habit, so you handle hard questions with calm, clear steps instead of panic and random tricks.
+         The result is flexible, rigorous problem solving that holds under exam pressure.`,
         blurb: `Learn to solve problems with clarity and precision, on time on target.`,
         cta: `master structured reasoning for powerful mathematical thinking`,
         img: "/math.svg"
@@ -39,21 +40,20 @@ The result is flexible, rigorous problem solving that holds under exam pressure.
 
     const topics = [
         "Functions & Graphs",
-        "Calculus (Differentiation & Integration)",
-        "Vectors & Geometry",
+        "Sequences and Series",
+        "Vectors in 3D Space",
         "Complex Numbers",
+        "Calculus",
         "Probability & Statistics",
-        "Sequences & Series",
-        "Maclaurin Series & Differential Equations",
     ];
 
     const methods = [
-        "Algebraic reasoning",
-        "Geometric visualisation",
+        "Cross-topic integration",
         "Proof construction",
-        "Mathematical techniques",
+        "Mathematical reasoning",
         "Strategic problem decomposition",
-        "Problem solving using real world context"
+        "Problem solving using real world context",
+        "Targeted practice"
     ];
 
     return (
