@@ -56,31 +56,6 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                 </div>
             </div>
 
-            {/* Our Approach Section */}
-            <div className="container mx-auto my-16">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Approach</h2>
-                    <p className="text-base md:text-lg  max-w-2xl mx-auto">
-                        A systematic methodology that transforms you into a confident problem-solver
-                    </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {keyFeatures.map((feature, idx) => (
-                        <div
-                            key={idx}
-                            className="p-6 bg-gradient-to-br from-slate-50 to-indigo-50 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-indigo-100"
-                        >
-                            <div className="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center text-white mb-4">
-                                {feature.icon}
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-2">{feature.title}</h3>
-                            <p className="text-slate-600 text-sm">{feature.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
             {/* Core Topics */}
             <div className="container mx-auto my-16">
                 <div className="grid md:grid-cols-2 gap-12">
