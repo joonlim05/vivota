@@ -37,7 +37,6 @@ const plans = [
             "Everything in Standard",
             "Personalised Mastery Action Plan",
             "Priority 1-1 consult booking",
-            "Content Summaries for every topic",
             "Dedicated Vivota Mentor",
         ],
     },

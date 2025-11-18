@@ -43,7 +43,7 @@ const vivotaOathSections = [
         list: [
             "Monthly updates (Mastery, Habits, Well-being, Next 14 days)",
             "Termly conversations to review goals, progress, and next steps",
-            "Quick, direct replies from the House Tutor to parent enquiries",
+            "Quick, direct replies from the Vivota Mentor to parent enquiries",
             "Personalised adjustments to workload and support based on shared feedback"
         ],
         extraText: "You always know how your child is doing, what we are focusing on next, and how we are supporting them at home and in class.",

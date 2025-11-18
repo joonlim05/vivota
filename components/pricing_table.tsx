@@ -6,7 +6,8 @@ export default function PricingTable() {
       color: "text-white",
       pricing: [
         { original: null, discounted: 100, hourly: null }
-      ]
+      ],
+      description: "1 trial lesson x 2h"
     },
     {
       name: "Standard",
@@ -17,7 +18,9 @@ export default function PricingTable() {
         { original: 900, discounted: 450, hourly: "28.13" },
         { original: 1300, discounted: 650, hourly: "27.08" },
         { original: 1600, discounted: 800, hourly: "25.00" }
-      ]
+      ],
+      description: "4 lessons x 2h",
+      promo:"Grand Opening Promo 50% Off"
     },
     {
       name: "Regimen",
@@ -28,7 +31,8 @@ export default function PricingTable() {
         { original: 2300, discounted: 2100, hourly: "43.70" },
         { original: 3300, discounted: 3000, hourly: "41.60" },
         { original: 4200, discounted: 3800, hourly: "39.60" }
-      ]
+      ],
+      description: "12 lessons x 2h"
     }
   ];
 
@@ -40,7 +44,7 @@ export default function PricingTable() {
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           Vivota Class Pricing
         </h2>
-        
+
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
@@ -57,14 +61,18 @@ export default function PricingTable() {
             </thead>
             <tbody>
               {pricingData.map((classType, idx) => (
-                <tr 
+                <tr
                   key={classType.name}
                   className={`${idx < pricingData.length - 1 ? 'border-b border-slate-100' : ''}`}
                 >
                   <td className="py-6 px-6 font-medium">
-                    <div className="flex items-center gap-2">
-                      {classType.name}
-                      {classType.emoji && <span className="text-lg">{classType.emoji}</span>}
+                    <div className="flex flex-col items-center gap-2">
+                      <div>
+                        <p className="inline text-lg md:text-xl xl:text-2xl font-bold">{classType.name}</p>
+                        {classType.emoji && <span className="text-lg ml-1">{classType.emoji}</span>}
+                      </div>
+                      <p className="">{classType.description}</p>
+                        {classType.promo && <span className="text-yellow-500">{classType.promo}</span>}
                     </div>
                   </td>
                   {classType.name === "Diagnostic" ? (
