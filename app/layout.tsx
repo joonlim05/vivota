@@ -17,14 +17,14 @@ export const metadata: Metadata = {
   We offer affordable, high-quality tuition for Junior College students in Chemistry, Physics, Biology, Math, and General Paper to
   help students excel academically.`,
   icons: {
-    icon: '/favicons/favicon.ico',
+    icon: '/favicon.ico',
     apple: '/favicons/apple-icon.png',
     other: [
       { rel: 'icon', url: '/favicons/web-app-manifest-192x192.png', sizes: '192x192' },
       { rel: 'icon', url: '/favicons/web-app-manifest-512x512.png', sizes: '512x512' },
     ],
   },
-  manifest: '/favicons/manifest.json', 
+  manifest: '/favicons/manifest.json',
 };
 
 export default function RootLayout({
@@ -34,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${cabin.variable} antialiased `}
       >
