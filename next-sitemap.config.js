@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://www.vivotaeducation.com',
+    siteUrl: 'https://www.vivotaedu.com',
     generateRobotsTxt: true, // creates robots.txt automatically
     changefreq: 'weekly',
     priority: 0.8,

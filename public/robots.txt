@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.vivotaeducation.com
+Host: https://www.vivotaedu.com
 
 # Sitemaps
-Sitemap: https://www.vivotaeducation.com/sitemap.xml
+Sitemap: https://www.vivotaedu.com/sitemap.xml
