@@ -5,7 +5,7 @@ export default function PricingTable() {
       emoji: null,
       color: "text-white",
       pricing: [
-        { original: null, discounted: 100, hourly: null }
+        { original: null, discounted: "Free of Charge"}
       ],
       description: "1 trial lesson x 2h"
     },
@@ -14,26 +14,14 @@ export default function PricingTable() {
       emoji: null,
       color: "text-orange-400",
       pricing: [
-        { original: 500, discounted: 250, hourly: "31.25" },
-        { original: 900, discounted: 450, hourly: "28.13" },
-        { original: 1300, discounted: 650, hourly: "27.08" },
-        { original: 1600, discounted: 800, hourly: "25.00" }
+        { original: null, discounted: "$375"},
+        { original: "$750", discounted: "$700"},
+        { original: "$1125", discounted: "$1000"},
+        { original: "$1500", discounted: "$1300"}
       ],
       description: "4 lessons x 2h",
-      promo:"Grand Opening Promo 50% Off"
+      promo:"Grand Opening Promo"
     },
-    {
-      name: "Regimen",
-      emoji: "🔥",
-      color: "text-green-400",
-      pricing: [
-        { original: 1200, discounted: 1100, hourly: "45.80" },
-        { original: 2300, discounted: 2100, hourly: "43.70" },
-        { original: 3300, discounted: 3000, hourly: "41.60" },
-        { original: 4200, discounted: 3800, hourly: "39.60" }
-      ],
-      description: "12 lessons x 2h"
-    }
   ];
 
   const subjects = ["1 Subject", "2 Subjects", "3 Subjects", "4 Subjects"];
@@ -78,7 +66,7 @@ export default function PricingTable() {
                   {classType.name === "Diagnostic" ? (
                     <td colSpan={4} className="py-6 px-6 text-center">
                       <span className={`text-2xl ${classType.color}`}>
-                        ${classType.pricing[0].discounted}
+                        {classType.pricing[0].discounted}
                       </span>
                     </td>
                   ) : (
@@ -86,12 +74,11 @@ export default function PricingTable() {
                       <td key={i} className="py-6 px-6 text-center">
                         <div className="flex flex-col items-center">
                           <div className="space-x-2">
-                            <span className="line-through">${price.original}</span>
+                            <span className="line-through">{price.original}</span>
                             <span className={`text-2xl font-bold ${classType.color}`}>
-                              ${price.discounted}
+                              {price.discounted}
                             </span>
                           </div>
-                          <span className="text-sm mt-1">(${price.hourly}/h)</span>
                         </div>
                       </td>
                     ))

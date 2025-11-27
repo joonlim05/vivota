@@ -5,10 +5,9 @@ import PricingTable from "@/components/pricing_table";
 const plans = [
     {
         name: "Diagnostic",
-        price: "$100",
+        price: "Free",
         duration: "(1 trial lesson, 2hrs)",
         strike: null,
-        highlight: false,
         benefits: [
             "Full access to Regimen benefits",
             "Not satisfied? 100% money-back guarantee.",
@@ -16,28 +15,13 @@ const plans = [
     },
     {
         name: "Standard",
-        price: "$250",
+        price: "$375",
         duration: "(4 lessons x 2hrs)",
-        strike: "$500",
-        highlight: false,
+        strike: null,
         benefits: [
             "Collaborative Learning Package",
             "Free online text consults",
             "Access to video learning resources",
-        ],
-    },
-    {
-        name: "Regimen",
-        price: "$1100",
-        duration: "(12 lessons x 2hrs)",
-        strike: "$1200",
-        highlight: true,
-        icon: "flame.svg",
-        benefits: [
-            "Everything in Standard",
-            "Personalised Mastery Action Plan",
-            "Priority 1-1 consult booking",
-            "Dedicated Vivota Mentor",
         ],
     },
 ];
@@ -65,14 +49,7 @@ export default function PlansPricing() {
                                 {/* Title + price */}
                                 <div className="flex flex-col items-center md:items-start gap-2">
                                     <div className="inline-flex items-center gap-2 text-2xl md:text-3xl font-bold">
-                                        <h2>{plan.name}</h2>
-                                        {plan.highlight && plan.icon && (
-                                            <img
-                                                src={plan.icon}
-                                                alt=""
-                                                className="w-4 h-4 md:w-5 md:h-5"
-                                            />
-                                        )}
+                                        <h2>{plan.name}</h2>                                        
                                     </div>
                                     <h3 className="text-base md:text-xl text-center md:text-left">
                                         {plan.strike && (
