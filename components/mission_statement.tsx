@@ -1,5 +1,23 @@
 import Link from "next/link"
 
+const missions = [
+    {
+        title: "Calm over cram",
+        description: "we will pace your work so you avoid panicking and mugging at the last minute.",
+        icon: "/lotus.svg",
+    },
+    {
+        title: "Small wins that compound",
+        description: "short check-ins and clear targets biweekly, not just “do more papers”.",
+        icon: "/trophy.svg",
+    },
+    {
+        title: "Student first, not just syllabus",
+        description: "we track your progress, habits, and workload together to improve without burning out.",
+        icon: "/student.svg",
+    },
+];
+
 export default function MissionStatement() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
@@ -9,15 +27,24 @@ export default function MissionStatement() {
             </h1>
 
             <p className="text-base md:text-lg 2xl:text-xl mt-4 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                JC students don’t need more content; they need clearer plans, faster feedback,
-                and adults who actually keep track. As doctors-in-training and educators, we built
-                Vivota to diagnose learning gaps and give structured, calm support week by week through the Vivota System.
+                You do not need more notes. You need a simple plan, quick help when you are stuck, and a trusted senior who actually
+                knows how you are doing. At Vivota, that is built in: your own Vivota Mentor, a monthly Mastery Action Plan we update together,
+                and a two-session learning cycle that keeps you moving steadily toward your exams.
             </p>
 
-            <ul className="text-base md:text-lg 2xl:text-xl my-12 lg:my-24 px-4 sm:px-8 leading-relaxed tracking-wide list-disc list-inside space-y-4 text-center sm:text-left">
-                <li><strong>Calm over cram</strong> — personalised, steady, actionable study plans instead of last-minute panic.</li>
-                <li><strong>Small wins that compound</strong> — regular check-ins and specific targets, not just “do more papers”.</li>
-                <li><strong>Treating the student, not just the syllabus</strong> — wellbeing, habits, and workload tracked alongside marks so progress&nbsp;is&nbsp;sustainable.</li>
+            <ul className="my-12 lg:my-24 px-4 sm:px-8 space-y-6 text-center sm:text-left">
+                {missions.map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-4">
+                        <img
+                            src={item.icon}
+                            alt={`${item.title} icon`}
+                            className="w-7 h-7 flex-shrink-0 mt-1"
+                        />
+                        <span className="text-base md:text-lg 2xl:text-xl leading-relaxed tracking-wide">
+                            <strong>{item.title}</strong> — {item.description}
+                        </span>
+                    </li>
+                ))}
             </ul>
 
             <div>
@@ -26,7 +53,7 @@ export default function MissionStatement() {
                 </h2>
 
                 <p className="text-base md:text-lg 2xl:text-xl my-3 sm:my-5 px-4 sm:px-8 leading-relaxed tracking-wide text-center">
-                    Where learning feels alive.
+                    A place where learning feels alive, not just like more homework.
                 </p>
             </div>
 
