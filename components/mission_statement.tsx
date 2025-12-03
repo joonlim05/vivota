@@ -21,8 +21,8 @@ const missions = [
 export default function MissionStatement() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-        py-8 sm:py-16 md:py-24 lg:py-32 xl:py-40 2xl:py-48 flex flex-col items-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center my-4 sm:my-6">
+        py-8 sm:py-16 md:py-24 lg:py-32 flex flex-col items-center w-full">
+            <h1 className="text-3xl md:text-4xl font-bold text-center my-4 sm:my-6">
                 Vivota's Core Mission
             </h1>
 

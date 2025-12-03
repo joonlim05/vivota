@@ -11,8 +11,8 @@ export default function SubjectsSection() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-        py-8 sm:py-16 md:py-24 lg:py-32 xl:py-40 2xl:py-48">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center">
+        py-8 sm:py-16 md:py-24 lg:py-32">
+            <h1 className="text-3xl md:text-4xl font-bold text-white text-center">
                 Our JC Courses
             </h1>
             <div className="py-8 lg:py-12">

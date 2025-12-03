@@ -81,20 +81,19 @@ export default function TestimonialCarousel() {
 
     if (error) {
         return (
-            <div className="max-w-7xl mx-auto py-32 md:py-36 lg:py-40 xl:py-42 px-8 sm:px-10 md:px-12 lg:px-14">
-                <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Our Space</h1>
-            </div>
+            <div></div>
         );
     }
 
     const isMobile = windowWidth < 768; // mobile < 768px
 
     return (
-        <div className="w-full min-h-screen py-12 px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+        py-8 sm:py-16 md:py-24 lg:py-32">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold my-4 sm:my-6">Student Testimonials</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold my-4 sm:my-6">Student Testimonials</h2>
                     <p className="text-base md:text-lg 2xl:text-xl">Hear what our students have to say</p>
                 </div>
 
@@ -102,23 +101,23 @@ export default function TestimonialCarousel() {
                 <div className="relative">
                     {/* Navigation Buttons */}
                     {!(isMobile && currentIndex === 0) && (
-                    <button
-                        onClick={goToPrevious}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50"
-                        aria-label="Previous testimonial"
-                    >
-                        <ChevronLeft className="w-6 h-6 text-gray-700" />
-                    </button>
+                        <button
+                            onClick={goToPrevious}
+                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50"
+                            aria-label="Previous testimonial"
+                        >
+                            <ChevronLeft className="w-6 h-6 text-gray-700" />
+                        </button>
                     )}
 
                     {!(isMobile && currentIndex === maxIndex) && (
-                    <button
-                        onClick={goToNext}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50"
-                        aria-label="Next testimonial"
-                    >
-                        <ChevronRight className="w-6 h-6 text-gray-700" />
-                    </button>
+                        <button
+                            onClick={goToNext}
+                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50"
+                            aria-label="Next testimonial"
+                        >
+                            <ChevronRight className="w-6 h-6 text-gray-700" />
+                        </button>
                     )}
 
 
@@ -185,8 +184,8 @@ export default function TestimonialCarousel() {
                                 key={pageIndex}
                                 onClick={() => setCurrentIndex(pageIndex * currentItemsPerView)}
                                 className={`w-2 h-2 rounded-full transition-all ${pageIndex === Math.floor(currentIndex / currentItemsPerView)
-                                        ? 'bg-yellow-600 w-8'
-                                        : 'bg-gray-300 hover:bg-gray-400'
+                                    ? 'bg-yellow-600 w-8'
+                                    : 'bg-gray-300 hover:bg-gray-400'
                                     }`}
                             />
                         ))}
