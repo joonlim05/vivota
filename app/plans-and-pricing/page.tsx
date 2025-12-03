@@ -9,8 +9,8 @@ const plans = [
         duration: "(1 trial lesson, 2hrs)",
         strike: null,
         benefits: [
-            "Full access to Regimen benefits",
-            "Not satisfied? 100% money-back guarantee.",
+            "Trial lesson to diagnose learning gaps",
+            "Quick review of your past exams/assignments",
         ],
     },
     {
@@ -28,17 +28,17 @@ const plans = [
 
 export default function PlansPricing() {
     return (
-        <div className="max-w-7xl mx-auto my-32 md:my-36 lg:my-40 xl:mt-0 px-8 sm:px-10 md:px-12 lg:px-14">
+        <div className="max-w-7xl mx-auto my-32 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
             {/* Pricing Cards */}
-            <div className="flex flex-col justify-center my-16 xl:min-h-screen">
+            <div className="flex flex-col justify-center">
                 <h1 className="text-3xl md:text-4xl text-center font-bold mb-6 md:mb-12">
                     Our Vivota Plans
                 </h1>
                 <h2 className="text-base sm:text-lg md:text-xl text-white text-center font-medium 
                 mb-16 lg:mb-20 tracking-wide">
-                    Affordable, Comprehensive, Effective.
+                    <p className="mb-4">Affordable, Comprehensive, Effective.</p>
+                    <p>100% refund of first month lesson fees, should you be unsatisfied with our classes.</p>
                 </h2>
-
                 <div className="flex flex-col justify-center items-center xl:flex-row xl:items-stretch gap-10 xl:gap-16">
                     {plans.map((plan) => (
                         <div
@@ -49,7 +49,7 @@ export default function PlansPricing() {
                                 {/* Title + price */}
                                 <div className="flex flex-col items-center md:items-start gap-2">
                                     <div className="inline-flex items-center gap-2 text-2xl md:text-3xl font-bold">
-                                        <h2>{plan.name}</h2>                                        
+                                        <h2>{plan.name}</h2>
                                     </div>
                                     <h3 className="text-base md:text-xl text-center md:text-left">
                                         {plan.strike && (
@@ -104,16 +104,31 @@ export default function PlansPricing() {
             </div>
 
             {/* Pricing Table */}
-            <div className="">
-                <div className="my-16">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center font-bold mb-6 md:mb-12">
+            <div className="py-16 lg:py-32">
+                <div className="mb-16">
+                    <h1 className="text-2xl md:text-3xl text-center font-bold mb-6 md:mb-12">
                         Need help with multiple subjects?
                     </h1>
-                    <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white text-center">
+                    <h2 className="text-base md:text-lg xl:text-xl text-white text-center">
                         Get more for greater value!
                     </h2>
                 </div>
                 <PricingTable />
+            </div>
+
+            <div className="text-base md:text-lg xl:text-xl px-4 sm:px-8 leading-relaxed tracking-wide space-y-12">
+                <h1 className="text-2xl md:text-3xl text-center font-bold mb-6 md:mb-12">
+                    Vivota Financial Assistance Scheme
+                </h1>
+                <p className="">
+                    As future doctors, we believe that every student deserves good, high quality education. We are offering tuition at no charge
+                    for students that need it the most. If you require financial assistance for our classes, please kindly reach out to us via Whatsapp
+                    at 80357523.
+                </p>
+                <p className="">
+                    *Terms & Conditions apply. Generally, only students currently under MOE FAS will be considered. Please understand that we may also
+                    request for proof of household income or other relevant documents to conduct a case-by-case review for each applicant.
+                </p>
             </div>
         </div>
     );

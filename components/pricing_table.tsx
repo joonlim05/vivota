@@ -2,7 +2,6 @@ export default function PricingTable() {
   const pricingData = [
     {
       name: "Diagnostic",
-      emoji: null,
       color: "text-white",
       pricing: [
         { original: null, discounted: "Free of Charge"}
@@ -11,7 +10,6 @@ export default function PricingTable() {
     },
     {
       name: "Standard",
-      emoji: null,
       color: "text-orange-400",
       pricing: [
         { original: "$375", discounted: "$187.50"},
@@ -29,7 +27,7 @@ export default function PricingTable() {
   return (
     <div className="flex items-center justify-center">
       <div className="bg-neutral-800 rounded-2xl shadow-xl p-8 max-w-6xl w-full">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
           Vivota Class Pricing
         </h2>
 
@@ -57,15 +55,14 @@ export default function PricingTable() {
                     <div className="flex flex-col items-center gap-2">
                       <div>
                         <p className="inline text-lg md:text-xl xl:text-2xl font-bold">{classType.name}</p>
-                        {classType.emoji && <span className="text-lg ml-1">{classType.emoji}</span>}
                       </div>
                       <p className="">{classType.description}</p>
                         {classType.promo && <span className="text-yellow-500">{classType.promo}</span>}
                     </div>
                   </td>
                   {classType.name === "Diagnostic" ? (
-                    <td colSpan={4} className="py-6 px-6 text-center">
-                      <span className={`text-2xl ${classType.color}`}>
+                    <td colSpan={4} className="py-6 px-6 text-center text-lg md:text-xl xl:text-2xl">
+                      <span className={`${classType.color}`}>
                         {classType.pricing[0].discounted}
                       </span>
                     </td>
@@ -75,7 +72,7 @@ export default function PricingTable() {
                         <div className="flex flex-col items-center">
                           <div className="space-x-2">
                             <span className="line-through">{price.original}</span>
-                            <span className={`text-2xl font-bold ${classType.color}`}>
+                            <span className={`text-lg md:text-xl xl:text-2xl font-bold ${classType.color}`}>
                               {price.discounted}
                             </span>
                           </div>
