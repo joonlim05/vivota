@@ -24,8 +24,8 @@ const navbarItems = [
         ],
     },
     {
-        label: "Plans and Pricing",
-        href: "/plans-and-pricing",
+        label: "Pricing and Aid",
+        href: "/pricing-and-aid",
     },
     {
         label: "Class Schedule",
