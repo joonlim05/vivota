@@ -37,7 +37,8 @@ export default function PlansPricing() {
                 <h2 className="text-base sm:text-lg md:text-xl text-white text-center font-medium 
                 mb-16 lg:mb-20 tracking-wide">
                     <p className="mb-4">Affordable, Comprehensive, Effective.</p>
-                    <p>100% refund of first month lesson fees, should you be unsatisfied with our classes.</p>
+                    <p className="mb-4">100% refund of first month lesson fees, should you be unsatisfied with our classes.</p>
+                    <p>*Terms & Conditions apply.</p>
                 </h2>
                 <div className="flex flex-col justify-center items-center xl:flex-row xl:items-stretch gap-10 xl:gap-16">
                     {plans.map((plan) => (
