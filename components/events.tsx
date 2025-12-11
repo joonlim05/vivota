@@ -16,9 +16,21 @@ export default function EventsCarousel() {
     },
     {
       id: 3,
+      title: "Taster Lessons",
+      image: "/events/taster.png"
+    },
+    {
+      id: 4,
       title: "Free LPA",
       image: "/events/free_lpa.png"
     },
+
+    {
+      id: 5,
+      title: "Intro to JC Life",
+      image: "/events/taster2.png"
+    },
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(Math.floor(posters.length / 2));
