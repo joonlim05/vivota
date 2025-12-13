@@ -25,6 +25,11 @@ export default function HeroSection() {
                         <span className="block">3 minutes away from Bishan MRT</span>
                     </p>
 
+                    <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
+                        <span className="block">Tutors with 3+ years of experience</span>
+                        <span className="block">150+ students tutored</span>
+                    </p>
+
                     {/* CTA Buttons */}
                     <div className="flex flex-col md:flex-row gap-4 xl:gap-6 pt-2 md:mb-4">
                         <Link href="/contact-us">
