@@ -33,8 +33,8 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                         <p className="text-base md:text-lg leading-relaxed">
                             {subject.blurb}
                         </p>
-                        <Link href="/plans-and-pricing">
-                            <button className="btn btn-warning px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <Link href="/pricing-and-aid">
+                            <button className="bg-gradient-to-r from-amber-400 to-yellow-500 px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
                                 Learn More
                             </button>
                         </Link>

@@ -32,13 +32,13 @@ export default function HeroSection() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col md:flex-row gap-4 xl:gap-6 pt-2 md:mb-4">
-                        <Link href="/contact-us">
+                        <Link href="/sample-notes">
                             <button
                                 className=" px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-400 to-yellow-500 
                                 text-black rounded-full shadow-lg transition-all 
                                 hover:scale-105 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] 
                                 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300">
-                                Contact Us
+                                View Notes
                             </button>
                         </Link>
                         <Link href="/class-schedule">

@@ -32,7 +32,7 @@ export default function SubjectsSection() {
                         <div
                             key={item.title}
                             className="bg-white rounded-lg shadow-lg overflow-hidden
-                             hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full
+                             hover:shadow-2xl transform hover:-translate-y-1 transition-shadow duration-300 flex flex-col h-full
                              min-w-2xs"
                         >
                             <div className="p-4 md:p-6 flex flex-col items-center">
@@ -56,7 +56,7 @@ export default function SubjectsSection() {
                         <div
                             key={item.title}
                             className="bg-white rounded-lg shadow-lg overflow-hidden 
-                            hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full
+                            hover:shadow-2xl transform hover:-translate-y-1 transition-shadow duration-300 flex flex-col h-full
                             min-w-2xs md:w-1/3"
                         >
                             <div className="p-4 md:p-6 flex flex-col items-center">
