@@ -38,7 +38,7 @@ export default function HeroSection() {
                                 text-black rounded-full shadow-lg transition-all 
                                 hover:scale-105 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] 
                                 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300">
-                                View Notes
+                                Sample Notes
                             </button>
                         </Link>
                         <Link href="/class-schedule">
