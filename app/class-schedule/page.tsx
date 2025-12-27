@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 export default function SchedulePage() {
     const schedule = [
-        { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'GP', subject_long: 'General Paper', tutor: 'Tenor' },
+        { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'Bio', subject_long: 'Biology', tutor: 'Kaiser' },
         { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'Phy', subject_long: 'Physics', tutor: 'Tenor' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'Spare Slot', subject_long: 'Spare Slot', tutor: '' },
         { day: 'Thursday', time: '5:00 - 7:00 pm', subject_short: 'Chem', subject_long: 'Chemistry', tutor: 'Elijah' },
-        { day: 'Thursday', time: '7:00 - 9:00 pm', subject_short: 'Bio', subject_long: 'Biology', tutor: 'Kaiser' },
+        { day: 'Thursday', time: '7:00 - 9:00 pm', subject_short: 'GP', subject_long: 'General Paper', tutor: 'Tenor' },
         { day: 'Friday', time: '5:00 - 7:00 pm', subject_short: 'Math', subject_long: 'Mathematics', tutor: 'Jaryl' },
-        { day: 'Friday', time: '7:00 - 9:00 pm', subject_short: 'GP', subject_long: 'General Paper', tutor: 'Tenor' },
+        { day: 'Friday', time: '7:00 - 9:00 pm', subject_short: 'Bio', subject_long: 'Biology', tutor: 'Kaiser' },
         { day: 'Saturday', time: '4:00 - 6:00 pm', subject_short: 'Chem', subject_long: 'Chemistry', tutor: 'Elijah' },
-        { day: 'Saturday', time: '6:00 - 8:00 pm', subject_short: 'Bio', subject_long: 'Biology', tutor: 'Kaiser' },
+        { day: 'Saturday', time: '6:00 - 8:00 pm', subject_short: 'GP', subject_long: 'General Paper', tutor: 'Tenor' },
         { day: 'Sunday', time: '4:00 - 6:00 pm', subject_short: 'Phy', subject_long: 'Physics', tutor: 'Jaryl' },
         { day: 'Sunday', time: '6:00 - 8:00 pm', subject_short: 'Math', subject_long: 'Mathematics', tutor: 'Jaryl' },
     ];
