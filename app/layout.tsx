@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import AnimatedBackground from "@/components/animated_bg";
 import Navbar from "@/components/navbar";
+import WhatsappFloat from "@/components/whatsapp_float";
 
 const cabin = Cabin({
   weight: ['400', '700'],
@@ -38,6 +39,7 @@ export default function RootLayout({
       >
         <AnimatedBackground />
         <Navbar />
+        <WhatsappFloat />
         {children}
         <Footer />
       </body>
