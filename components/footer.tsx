@@ -29,7 +29,7 @@ const FooterItems: FooterItem[] = [
     {
         label: "Enrolment",
         dropdown: [
-            { label: "Plans and Pricing", href: "/plans-and-pricing" },
+            { label: "Pricing and Aid", href: "/pricing-and-aid" },
             { label: "Class Schedule", href: "/class-schedule" },
             { label: "Contact Us", href: "/contact-us" },
         ],
