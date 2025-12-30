@@ -38,7 +38,7 @@ export default function SampleNotesPage() {
             id: 5,
             subject: 'General Paper',
             posterImage: '/notes/GP_notes.png',
-            fileUrl: 'https://drive.google.com/file/d/10_78d1YLLwKn6GzD3BRoBTJlljW8OBcq/view?usp=sharing'
+            fileUrl: 'https://drive.google.com/file/d/1nSTzR5bxb-HE3jrKGfrvIsW68pk-akL5/view?usp=sharing'
         },
     ];
 
