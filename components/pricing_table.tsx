@@ -4,7 +4,7 @@ export default function PricingTable() {
       name: "Diagnostic",
       color: "text-white",
       pricing: [
-        { original: null, discounted: "Free of Charge"}
+        { original: null, discounted: "Free of Charge" }
       ],
       description: "1 trial lesson x 2h"
     },
@@ -12,13 +12,13 @@ export default function PricingTable() {
       name: "Standard",
       color: "text-orange-400",
       pricing: [
-        { original: "$375", discounted: "$187.50"},
-        { original: "$700", discounted: "$350"},
-        { original: "$1000", discounted: "$500"},
-        { original: "$1300", discounted: "$650"}
+        { original: "$375", discounted: "" },
+        { original: "$700", discounted: "" },
+        { original: "$1000", discounted: "$900" },
+        { original: "$1300", discounted: "$1000" }
       ],
       description: "4 lessons x 2h",
-      promo:"Grand Opening Promo 50% off"
+      promo: "Grand Opening Promo 50% off"
     },
   ];
 
@@ -27,10 +27,12 @@ export default function PricingTable() {
   return (
     <div className="flex items-center justify-center">
       <div className="bg-neutral-800 rounded-2xl shadow-xl p-8 max-w-6xl w-full">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">
           Vivota Class Pricing
         </h2>
-
+        <h2 className="text-xl md:text-2xl font-bold mb-6 text-center">
+          (Jan 2026 Promo Rates)
+        </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
@@ -57,7 +59,7 @@ export default function PricingTable() {
                         <p className="inline text-lg md:text-xl xl:text-2xl font-bold">{classType.name}</p>
                       </div>
                       <p className="">{classType.description}</p>
-                        {classType.promo && <span className="text-yellow-500">{classType.promo}</span>}
+                      {classType.promo && <span className="text-yellow-500">{classType.promo}</span>}
                     </div>
                   </td>
                   {classType.name === "Diagnostic" ? (
@@ -71,10 +73,14 @@ export default function PricingTable() {
                       <td key={i} className="py-6 px-6 text-center">
                         <div className="flex flex-col items-center">
                           <div className="space-x-2">
-                            <span className="line-through">{price.original}</span>
-                            <span className={`text-lg md:text-xl xl:text-2xl font-bold ${classType.color}`}>
-                              {price.discounted}
+                            <span className={`text-lg md:text-xl xl:text-2xl font-bold ${price.discounted ? "line-through" : ""}`}>
+                              {price.original}
                             </span>
+                            {price.discounted && (
+                              <span className={`text-lg md:text-xl xl:text-2xl font-bold ${classType.color}`}>
+                                {price.discounted}
+                              </span>
+                            )}
                           </div>
                         </div>
                       </td>
@@ -90,6 +96,6 @@ export default function PricingTable() {
           <p>All prices shown reflect current promotional rates</p>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
