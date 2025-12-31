@@ -18,7 +18,7 @@ export default function PricingTable() {
         { original: "$1300", discounted: "$1000" }
       ],
       description: "4 lessons x 2h",
-      promo: "Grand Opening Promo 50% off"
+      promo: "Jan 2026 Promo"
     },
   ];
 
