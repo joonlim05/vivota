@@ -15,9 +15,9 @@ const plans = [
     },
     {
         name: "Standard",
-        price: "$187.50",
+        price: "$375",
         duration: "(4 lessons x 2hrs)",
-        strike: "$375",
+        strike: null,
         benefits: [
             "Collaborative Learning Package",
             "Free online text consults",
