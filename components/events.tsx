@@ -6,31 +6,9 @@ export default function EventsCarousel() {
   const posters = [
     {
       id: 1,
-      title: "Medical School Admission Talk",
-      image: "/events/medical_talk.png"
-    },
-    {
-      id: 2,
-      title: "Investment Seminar",
-      image: "/events/investment_seminar.png"
-    },
-    {
-      id: 3,
-      title: "Taster Lessons",
-      image: "/events/taster.png"
-    },
-    {
-      id: 4,
       title: "Free LPA",
       image: "/events/free_lpa.png"
     },
-
-    {
-      id: 5,
-      title: "Intro to JC Life",
-      image: "/events/taster2.png"
-    },
-
   ];
 
   const [currentIndex, setCurrentIndex] = useState(Math.floor(posters.length / 2));
