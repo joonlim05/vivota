@@ -52,9 +52,9 @@ export default function HeroSection() {
                         </Link>
                     </div>
                 </div>
-                {/* Image (optional on XL, stacked below text on mobile) */}
+                
                 <img
-                    src="hero_trial.jpg"
+                    src="hero.jpg"
                     alt="Hero"
                     className="w-11/12 md:w-8/12 lg:w-7/12 xl:w-1/2 
                     rounded-xl border-4 border-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.4)] mt-8 md:mt-4 xl:mt-0 xl:ml-12"
