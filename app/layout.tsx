@@ -5,12 +5,15 @@ import Footer from "@/components/footer";
 import AnimatedBackground from "@/components/animated_bg";
 import Navbar from "@/components/navbar";
 import WhatsappFloat from "@/components/whatsapp_float";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const cabin = Cabin({
   weight: ['400', '700'],
   subsets: ['latin'],
   variable: '--font-cabin',
 });
+
+const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 export const metadata: Metadata = {
   title: "Vivota Education | Founded by Medical Students in Singapore",
@@ -41,6 +44,7 @@ export default function RootLayout({
         <Navbar />
         <WhatsappFloat />
         {children}
+        {adsId && <GoogleAnalytics gaId={adsId} />}
         <Footer />
       </body>
     </html>
