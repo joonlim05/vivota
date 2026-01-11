@@ -122,8 +122,8 @@ export default function PlansPricing() {
                     Vivota Financial Assistance Scheme
                 </h1>
                 <p className="">
-                    As future doctors, we believe that every student deserves good, high quality education. We are offering tuition at no charge
-                    for students that need it the most. If you require financial assistance for our classes, please kindly reach out to us via Whatsapp
+                    As future doctors, we believe that every student deserves good, high quality education. We are offering tuition and education services at no charge
+                    for students that need it the most. If you require financial assistance for our classes or education services, please kindly reach out to us via Whatsapp
                     at 80357523.
                 </p>
                 <p className="">
