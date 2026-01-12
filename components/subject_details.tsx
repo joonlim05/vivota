@@ -17,9 +17,13 @@ export type SubjectDetailsProps = {
     }[];
     topics: string[];
     methods: string[];
+    retentionTools?: {
+        title: string;
+        description: string;
+    }[];
 };
 
-export default function SubjectDetails({ subject, keyFeatures, topics, methods }: SubjectDetailsProps) {
+export default function SubjectDetails({ subject, keyFeatures, topics, methods, retentionTools }: SubjectDetailsProps) {
     return (
         <div className="max-w-7xl mx-auto my-16 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
             {/* Hero Section */}
@@ -94,6 +98,25 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods }
                     </div>
                 </div>
             </div>
+
+            {/* Retention & Memory Tools */}
+            {retentionTools && retentionTools.length > 0 && (
+                <div className="container mx-auto my-16 px-4">
+                    <h2 className="text-3xl font-bold mb-8 text-center">Retention & Memory Tools (Bio)</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {retentionTools.map((tool, idx) => (
+                            <div
+                                key={idx}
+                                className="p-6 bg-gradient-to-br from-green-200 via-green-300 to-green-400 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                            >
+                                <h3 className="text-xl font-bold mb-3 text-black">{tool.title}</h3>
+                                <p className="text-gray-800 leading-relaxed">{tool.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
 
             {/* Detailed Description */}
             <div className="bg-gradient-to-r from-yellow-100 via-amber-200 to-orange-300 text-white px-4 py-12 sm:p-12 md:p-16 rounded-lg my-16">

@@ -56,12 +56,31 @@ export default function BiologyPage() {
         "Error-spotting and hypothesis testing"
     ];
 
+    const retentionTools = [
+        {
+            title: "📚 Spaced Repetition Flashcards (Anki)",
+            description: `To help students retain Biology concepts long-term, we provide a curated set of Anki flashcards designed around spaced repetition, 
+            a scientifically proven method to combat the forgetting curve. Instead of cramming, key definitions, processes, diagrams, and exam-tested details 
+            are reviewed at optimal intervals, ensuring concepts are reinforced just before they are forgotten. This allows students to build strong foundational 
+            memory while reducing study time and stress.`
+        },
+        {
+            title: "🧠 Weekly Telegram Question Bank (Active Recall)",
+            description: `In addition, students receive access to a weekly Biology question bank via Telegram, carefully curated to align with the syllabus and common
+             exam pitfalls. These questions are designed for active recall, pushing students to retrieve information without prompts—one of the most effective ways to
+              deepen understanding and improve exam performance. Regular practice helps students identify gaps early, strengthen application skills, 
+              and build confidence over time.`
+        }
+    ];
+
+
     return (
         <SubjectDetails
             subject={subject}
             keyFeatures={keyFeatures}
             topics={topics}
             methods={methods}
+            retentionTools={retentionTools}
         />
     )
 }

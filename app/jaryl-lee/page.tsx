@@ -13,7 +13,7 @@ export default function TutorProfile() {
             "Raffles All-Round Excellence Award",
             "Gifted Education Programme (GEP)"
         ],
-        bio: `Hey everyone, I’m Jaryl! Like you, I grew up in Singapore’s educational system, scored 90 RP at A-Levels, and now study Medicine at NTU LKC. 
+        bio: `Hey everyone, I’m Jaryl! Like you, I grew up in Singapore’s educational system, scored 90 RP at A-Levels, and now study Medicine. 
         However, I was also in your position once, and I know what it feels like to be stuck, anxious, and pressed for time... but don't fret!
         I'm here to help make the best of your current situation and strive to improve not just your academics but your well-being too. `,
 
