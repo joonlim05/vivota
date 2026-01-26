@@ -16,7 +16,7 @@ export default function HeroSection() {
                     {/* Motto */}
                     <p className="text-lg sm:text-xl xl:text-2xl text-gray-200 font-medium tracking-wide leading-snug">
                         <span className="block">Founded and Taught by</span>
-                        <span className="block text-yellow-600">Singapore Medical Students</span>
+                        <span className="block text-yellow-500">Singapore Medical Students</span>
                     </p>
 
                     {/* Location */}
@@ -34,7 +34,7 @@ export default function HeroSection() {
                     <div className="flex flex-col md:flex-row gap-4 xl:gap-6 pt-2 md:mb-4">
                         <Link href="/sample-notes">
                             <button
-                                className=" px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-400 to-yellow-500 
+                                className=" px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-300 to-yellow-500 
                                 text-black rounded-full shadow-lg transition-all 
                                 hover:scale-105 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] 
                                 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300">
@@ -43,7 +43,7 @@ export default function HeroSection() {
                         </Link>
                         <Link href="/class-schedule">
                             <button
-                                className="px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-400 to-yellow-500 
+                                className="px-6 md:px-8 py-3 xl:px-10 xl:py-4 text-sm sm:text-base xl:text-lg font-semibold bg-gradient-to-r from-amber-300 to-yellow-500 
                                 text-black rounded-full shadow-lg transition-all 
                                 hover:scale-105 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] 
                                 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300">

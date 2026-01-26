@@ -58,7 +58,7 @@ export default function PlansPricing() {
                                                 {plan.strike}
                                             </span>
                                         )}
-                                        <span className="text-orange-500 font-semibold">
+                                        <span className="text-yellow-500 font-semibold">
                                             {plan.price}
                                         </span>{" "}
                                         <span>{plan.duration}</span>
@@ -91,8 +91,8 @@ export default function PlansPricing() {
                                 <div className="mt-auto pt-6">
                                     <Link href="/contact-us">
                                         <button
-                                            className="bg-yellow-500 text-black font-semibold px-6 py-3
-                                             rounded-lg hover:bg-yellow-600 transition-colors duration-200 w-full"
+                                            className="bg-gradient-to-r from-amber-300 to-yellow-500 text-black font-semibold px-6 py-3
+                                             rounded-lg hover:from-amber-400 hover:to-yellow-600 transition-colors duration-200 w-full cursor-pointer"
                                         >
                                             Enrol Now
                                         </button>

@@ -29,21 +29,21 @@ export default function Pillars() {
           return (
             <div key={index} className="flex flex-col items-center">
               {/* Pillar capital (top) */}
-              <div className="w-20 sm:w-24 h-6 sm:h-8 bg-[#E5B80B] rounded-t-lg shadow-md"></div>
+              <div className="w-20 sm:w-24 h-6 sm:h-8 bg-[#f5c60c] rounded-t-lg shadow-md"></div>
               
               {/* Icon circle on pillar */}
               <div className="relative -mt-3 sm:-mt-4 mb-2 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-2 sm:border-4 border-yellow-500 z-10">
-                <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-600" />
+                <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-500" />
               </div>
               
               {/* Pillar shaft */}
-              <div className="w-16 sm:w-20 h-32 sm:h-48 bg-gradient-to-b from-gray-100 to-gray-200 shadow-lg"></div>
+              <div className="w-16 sm:w-20 h-32 sm:h-48 bg-gradient-to-b from-gray-50 to-yellow-300 shadow-lg"></div>
               
               {/* Pillar base */}
-              <div className="w-24 sm:w-28 h-5 sm:h-6 bg-[#E5B80B] rounded-b-lg shadow-md"></div>
+              <div className="w-24 sm:w-28 h-5 sm:h-6 bg-[#f5c60c] rounded-b-lg shadow-md"></div>
               
               {/* Title below pillar */}
-              <h3 className="text-xs sm:text-sm font-semibold text-white mt-3 sm:mt-4 text-center w-28 sm:w-32 h-12 sm:h-16 leading-tight">
+              <h3 className="text-sm lg:text-base font-semibold text-white mt-3 sm:mt-4 text-center w-28 sm:w-32 h-12 sm:h-16 leading-tight">
                 {pillar.title}
               </h3>
             </div>

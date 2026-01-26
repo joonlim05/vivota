@@ -48,7 +48,7 @@ export default function FAQs() {
         {faq.map((item, i) => (
           <div
             key={i}
-            className="collapse collapse-plus bg-base-100 border border-yellow-500 bg-neutral-800"
+            className="collapse collapse-plus bg-base-100 border border-yellow-400 bg-neutral-800"
           >
             <input
               type="checkbox"

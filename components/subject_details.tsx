@@ -23,7 +23,7 @@ export type SubjectDetailsProps = {
     }[];
 };
 
-export default function SubjectDetails({ subject, keyFeatures, topics, methods, retentionTools }: SubjectDetailsProps) {
+export default function SubjectDetails({ subject, topics, methods, retentionTools }: SubjectDetailsProps) {
     return (
         <div className="max-w-7xl mx-auto my-16 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
             {/* Hero Section */}
@@ -38,15 +38,16 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods, 
                             {subject.blurb}
                         </p>
                         <Link href="/pricing-and-aid">
-                            <button className="bg-gradient-to-r from-amber-400 to-yellow-500 px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <button className="bg-gradient-to-r from-amber-300 to-yellow-500 px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
                                 Learn More
                             </button>
                         </Link>
                     </div>
 
+                    {/* Big Subject Icon */}
                     <div className="flex justify-center">
                         <div className="relative w-50 h-50 md:w-80 md:h-80 
-                        bg-gradient-to-br from-blue-300 to-indigo-500 rounded-3xl 
+                        bg-gradient-to-br from-blue-200 to-blue-500 rounded-3xl 
                         shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                             <img
                                 src={subject.img}
@@ -87,7 +88,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods, 
                             {methods.map((method, idx) => (
                                 <div
                                     key={idx}
-                                    className="p-4 bg-gradient-to-br from-blue-400 to-indigo-400 text-gray-900 rounded-lg 
+                                    className="p-4 bg-gradient-to-r from-blue-200 to-blue-400 text-gray-900 rounded-lg 
                                     text-center font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105
                                     flex items-center justify-center"
                                 >
@@ -99,7 +100,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods, 
                 </div>
             </div>
 
-            {/* Retention & Memory Tools */}
+            {/* Retention & Memory Tools (for bio) */}
             {retentionTools && retentionTools.length > 0 && (
                 <div className="container mx-auto my-16 px-4">
                     <h2 className="text-3xl font-bold mb-8 text-center">Retention & Memory Tools (Bio)</h2>
@@ -107,7 +108,7 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods, 
                         {retentionTools.map((tool, idx) => (
                             <div
                                 key={idx}
-                                className="p-6 bg-gradient-to-br from-green-200 via-green-300 to-green-400 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                                className="p-6 bg-gradient-to-r from-emerald-200 to-emerald-400 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                             >
                                 <h3 className="text-xl font-bold mb-3 text-black">{tool.title}</h3>
                                 <p className="text-gray-800 leading-relaxed">{tool.description}</p>
@@ -141,12 +142,12 @@ export default function SubjectDetails({ subject, keyFeatures, topics, methods, 
                     </p>
                     <div className="flex gap-4 justify-center gap-8">
                         <Link href="/contact-us">
-                            <button className="px-6 py-3 sm:px-8 sm:py-4 bg-yellow-500 text-black text-base md:text-lg border-2 border-black rounded-lg 
+                            <button className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-amber-300 to-yellow-500 text-black text-base md:text-lg border-2 border-black rounded-lg 
                             font-semibold hover:scale-105 transition-all whitespace-nowrap">
                                 Enrol Now
                             </button>
                         </Link>
-                        <Link href="/plans-and-pricing">
+                        <Link href="/pricing-and-aid">
                             <button className="px-6 py-3 sm:px-8 sm:py-4 bg-neutral-100 text-black text-base md:text-lg rounded-lg 
                             font-semibold hover:scale-105 transition-all whitespace-nowrap">
                                 Learn More

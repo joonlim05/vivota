@@ -10,7 +10,7 @@ export default function PricingTable() {
     },
     {
       name: "Standard",
-      color: "text-orange-400",
+      color: "text-yellow-500",
       pricing: [
         { original: "$375", discounted: "" },
         { original: "$700", discounted: "" },

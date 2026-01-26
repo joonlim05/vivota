@@ -175,7 +175,7 @@ export default function VivotaSystem() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch gap-8 mb-8">
 
                     {/* Session 1 Card */}
-                    <div className="bg-[#E5B80B] flex flex-col text-black rounded-xl shadow-lg px-6 py-8 md:px-8 md:py-12 hover:shadow-2xl transition leading-relaxed md:leading-loose">
+                    <div className="bg-gradient-to-br from-amber-200 to-yellow-400 flex flex-col text-black rounded-xl shadow-lg px-6 py-8 md:px-8 md:py-12 hover:shadow-2xl transition leading-relaxed md:leading-loose">
                         <h2 className="text-xl font-bold mb-4">{sessions[0].title}</h2>
                         <ul className="list-disc list-inside space-y-2 text-sm md:text-base">
                             {sessions[0].points.map((point, idx) => (
@@ -192,7 +192,7 @@ export default function VivotaSystem() {
                     </div>
 
                     {/* Session 2 Card */}
-                    <div className="bg-[#E5B80B] flex flex-col text-black rounded-xl shadow-lg px-6 py-8 md:px-8 md:py-12 hover:shadow-2xl transition leading-relaxed md:leading-loose">
+                    <div className="bg-gradient-to-br from-amber-200 to-yellow-400 flex flex-col text-black rounded-xl shadow-lg px-6 py-8 md:px-8 md:py-12 hover:shadow-2xl transition leading-relaxed md:leading-loose">
                         <h2 className="text-xl font-bold mb-4">{sessions[1].title}</h2>
                         <ul className="list-disc list-inside space-y-2 text-sm md:text-base">
                             {sessions[1].points.map((point, idx) => (
