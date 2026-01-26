@@ -53,10 +53,10 @@ export default function SchedulePage() {
 
     const filteredSchedule = schedule.filter(lesson => {
         const subjectMatch =
-            subjectFilter === 'All Subjects' || lesson.subject_short.includes(subjectFilter);
+            subjectFilter === 'All Subjects' || lesson.subject_long.includes(subjectFilter);
 
         const levelMatch =
-            levelFilter === 'All Levels' || lesson.subject_short.includes(levelFilter);
+            levelFilter === 'All Levels' || lesson.subject_long.includes(levelFilter);
 
         return subjectMatch && levelMatch;
     });

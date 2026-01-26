@@ -15,7 +15,7 @@ export default function ScheduleFilter({
     onSubjectChange,
     onLevelChange,
 }: ScheduleFilterProps) {
-    const subjects = ['All Subjects', 'GP', 'Chem', 'Phy', 'Bio', 'Math'];
+    const subjects = ['All Subjects', 'General Paper', 'Chemistry', 'Physics', 'Biology', 'Mathematics'];
     const levels = ['All Levels', 'J1', 'J2'];
 
     return (
