@@ -1,5 +1,8 @@
+'use client';
 import { Clock, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
+import ScheduleFilter from '@/components/filter_schedule';
 
 export default function SchedulePage() {
     const schedule = [
@@ -45,7 +48,20 @@ export default function SchedulePage() {
         return subjectColors[key as keyof typeof subjectColors] || subjectColors['Free Slot'];
     };
 
-    const groupedSchedule = schedule.reduce<Record<string, typeof schedule>>((acc, lesson) => {
+    const [subjectFilter, setSubjectFilter] = useState('All Subjects');
+    const [levelFilter, setLevelFilter] = useState('All Levels');
+
+    const filteredSchedule = schedule.filter(lesson => {
+        const subjectMatch =
+            subjectFilter === 'All Subjects' || lesson.subject_short.includes(subjectFilter);
+
+        const levelMatch =
+            levelFilter === 'All Levels' || lesson.subject_short.includes(levelFilter);
+
+        return subjectMatch && levelMatch;
+    });
+
+    const groupedSchedule = filteredSchedule.reduce<Record<string, typeof schedule>>((acc, lesson) => {
         if (!acc[lesson.day]) acc[lesson.day] = [];
         acc[lesson.day].push(lesson);
         return acc;
@@ -63,18 +79,24 @@ export default function SchedulePage() {
                     <div className="flex flex-col items-center gap-2">
                         <div className="flex items-center justify-center gap-2">
                             <MapPin className="w-4 h-4" />
-                            <p className="text-base lg:text-lg font-semibold">Economics Cafe</p>
+                            <p className="text-base sm:text-lg font-semibold">Economics Cafe</p>
                         </div>
-                        <p className="text-sm lg:text-base">505B Bishan St 11, #01-422</p>
+                        <p className="text-base sm:text-lg">505B Bishan St 11, #01-422</p>
                     </div>
                 </div>
 
                 <div className="text-center mb-6">
-                    <p className="text-base lg:text-xl text-white font-medium">
+                    <p className="text-base sm:text-lg text-white font-medium">
                         Free slot is now available for any subject with <span className='block text-amber-400'>minimum of 5 students</span>
                     </p>
                 </div>
 
+                <ScheduleFilter
+                    subjectFilter={subjectFilter}
+                    levelFilter={levelFilter}
+                    onSubjectChange={setSubjectFilter}
+                    onLevelChange={setLevelFilter}
+                />
 
                 <div className="space-y-6">
                     {dayOrder.map(day => {
@@ -108,7 +130,7 @@ export default function SchedulePage() {
                                                         {lesson.subject_long}
                                                     </span>
                                                     {lesson.tutor && (
-                                                        <span className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-xs sm:text-sm font-medium">
+                                                        <span className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium">
                                                             {lesson.tutor}
                                                         </span>
                                                     )}
