@@ -20,7 +20,7 @@ export default function SampleNotesPage() {
             id: 2,
             subject: 'Chemistry',
             posterImage: '/notes/chemistry_notes.png',
-            fileUrl: 'https://drive.google.com/file/d/1HAiyeEL0mZrrBDqZDasPZy4iGs8g3R43/view?usp=sharing'
+            fileUrl: 'https://drive.google.com/file/d/1RaANKL7DNBn80KyslMxP1ZBWYba4j861/view?usp=sharing'
         },
         {
             id: 3,
