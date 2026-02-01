@@ -15,9 +15,9 @@ const plans = [
     },
     {
         name: "Standard",
-        price: "$375",
+        price: "$288",
         duration: "(4 lessons x 2hrs)",
-        strike: null,
+        strike: "$375",
         benefits: [
             "Collaborative Learning Package",
             "Free online text consults",
@@ -110,8 +110,8 @@ export default function PlansPricing() {
                     <h1 className="text-2xl md:text-3xl text-center font-bold mb-6 md:mb-12">
                         Need help with multiple subjects?
                     </h1>
-                    <h2 className="text-base md:text-lg xl:text-xl text-white text-center">
-                        Get more for greater value!
+                    <h2 className="text-2xl md:text-3xl text-white text-center tracking-wide">
+                        Join us this feb and <span className="text-yellow-500 font-bold block">HUAT AH</span> with our special promo!
                     </h2>
                 </div>
                 <PricingTable />

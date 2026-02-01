@@ -10,15 +10,15 @@ export default function PricingTable() {
     },
     {
       name: "Standard",
-      color: "text-yellow-500",
+      color: "text-orange-400",
       pricing: [
-        { original: "$375", discounted: "" },
-        { original: "$700", discounted: "" },
-        { original: "$1000", discounted: "$900" },
-        { original: "$1300", discounted: "$1000" }
+        { original: "$375", discounted: "$288" },
+        { original: "$700", discounted: "$488" },
+        { original: "$1000", discounted: "$688" },
+        { original: "$1300", discounted: "$888" }
       ],
       description: "4 lessons x 2h",
-      promo: "Jan 2026 Promo"
+      promo: "CNY Promo 🍊"
     },
   ];
 
@@ -27,11 +27,11 @@ export default function PricingTable() {
   return (
     <div className="flex items-center justify-center">
       <div className="bg-neutral-800 rounded-2xl shadow-xl p-8 max-w-6xl w-full">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center tracking-wide">
           Vivota Class Pricing
         </h2>
-        <h2 className="text-xl md:text-2xl font-bold mb-6 text-center">
-          (Jan 2026 Promo Rates)
+        <h2 className="text-xl md:text-2xl font-bold mb-6 text-center text-yellow-500 my-4 tracking-wide text-nowrap">
+           🧨 1-16 Feb CNY Promo! 🧨 
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
@@ -92,8 +92,8 @@ export default function PricingTable() {
           </table>
         </div>
 
-        <div className="mt-6 text-center text-sm text-slate-500">
-          <p>All prices shown reflect current promotional rates</p>
+        <div className="mt-6 text-center text-sm text-slate-300">
+          <p>All prices shown are subjected to current promotional rates</p>
         </div>
       </div>
     </div >
