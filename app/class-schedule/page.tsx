@@ -8,13 +8,13 @@ export default function SchedulePage() {
     const schedule = [
         { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Elijah' },
 
-        { day: 'Tuesday', time: '8:00 - 10:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '' },
+        { day: 'Tuesday', time: '8:00 - 10:00 pm', subject_short: 'J2 Physics', subject_long: 'J2 Physics', tutor: 'Jaryl' },
 
         { day: 'Wednesday', time: '1:30 - 3:30 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '' },
         { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'J1 Phy', subject_long: 'J1 Physics', tutor: 'Tenor ' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'J1/J2 GP', subject_long: 'J1/J2 General Paper', tutor: 'Tenor' },
 
-        { day: 'Thursday', time: '3:30 - 5:30 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '' },
+        { day: 'Thursday', time: '3:30 - 5:30 pm', subject_short: 'J1 Math', subject_long: 'J1 Mathematics', tutor: 'Jaryl' },
         { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J2 Chem', subject_long: 'J2 Chemistry', tutor: 'Elijah' },
         { day: 'Thursday', time: '7:30 - 9:30 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Tenor' },
 
@@ -28,7 +28,7 @@ export default function SchedulePage() {
         { day: 'Saturday', time: '7:30 - 9:30 pm', subject_short: 'J2 Bio', subject_long: 'J2 Biology', tutor: 'Kaiser' },
 
         { day: 'Sunday', time: '8:30 - 10:30 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '' },
-        { day: 'Sunday', time: '3:30 - 5:30 pm', subject_short: 'J2 Physics', subject_long: 'J2 Physics', tutor: 'Jaryl' },
+        { day: 'Sunday', time: '3:30 - 5:30 pm', subject_short: 'J1 Bio', subject_long: 'J1 Biology', tutor: 'Kaiser' },
         { day: 'Sunday', time: '5:30 - 7:30 pm', subject_short: 'J2 Math', subject_long: 'J2 Mathematics', tutor: 'Jaryl' },
         { day: 'Sunday', time: '7:30 - 9:30 pm', subject_short: 'J1 Math', subject_long: 'J1 Mathematics', tutor: 'Jaryl' },
     ];

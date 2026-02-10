@@ -26,8 +26,8 @@ export default function HeroSection() {
                     </p>
 
                     <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
-                        <span className="block">Tutors with 3+ years of experience</span>
-                        <span className="block">150+ students tutored</span>
+                        <span className="block">95% A/B rate for the past 3 years.</span>
+                        <span className="block">300+ students tutored.</span>
                     </p>
 
                     {/* CTA Buttons */}

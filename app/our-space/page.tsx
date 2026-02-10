@@ -7,7 +7,7 @@ export default function OurSpace() {
                 <h1 className="text-3xl md:text-4xl font-bold mb-6">Our Space</h1>
                 <p className="text-base md:text-lg leading-relaxed mb-12">
                     We co-share a cozy space in Bishan with Economics Cafe, a distinguished economics
-                    tuition centre run by Mr Edmund Quek. The classroom can host up to 32 students,
+                    tuition centre run by Mr Edmund Quek. The classroom can host up to 24 students,
                     which is sufficiently spacious for conducive learning and collaboration to take
                     place. It is fully equipped with in-house projectors and whiteboards. We intend to
                     keep our class sizes small to ensure every student receives the help they need.
