@@ -15,7 +15,7 @@ const cabin = Cabin({
 });
 
 const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const GTM_ID = "GTM-KC8L24VS";
 
 export const metadata: Metadata = {
   title: "Vivota Education | Founded by Medical Students in Singapore",
@@ -47,7 +47,7 @@ export default function RootLayout({
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_ID}');
+})(window,document,'script','dataLayer','GTM-KC8L24VS');
             `}
           </Script>
         )}
