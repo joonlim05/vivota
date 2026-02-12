@@ -15,7 +15,7 @@ const cabin = Cabin({
 });
 
 const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
-const GTM_ID = "GTM-KC8L24VS";
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
 export const metadata: Metadata = {
   title: "Vivota Education | Founded by Medical Students in Singapore",
