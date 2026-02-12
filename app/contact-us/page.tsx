@@ -1,8 +1,6 @@
 import { Calendar } from 'lucide-react';
 
 export default function EnrollmentPage() {
-    const whatsappNumber = "80357523";
-    const whatsappLink = `https://wa.me/65${whatsappNumber}`;
     const trialClassLink = "https://forms.gle/2E3i3FqZ8yci8qh69";
 
     return (
@@ -19,8 +17,7 @@ export default function EnrollmentPage() {
                     </p>
                 </div>
 
-                {/* Main Card */}
-                {/* WhatsApp CTA */}
+                {/* Enrolment Btn */}
                 <a
                     href={trialClassLink}
                     target="_blank"
