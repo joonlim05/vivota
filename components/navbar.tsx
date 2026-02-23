@@ -9,7 +9,7 @@ const navbarItems = [
         dropdown: [
             { label: "The Vivota Oath", href: "/vivota-oath" },
             { label: "The Vivota Learning System", href: "/vivota-system" },
-            { label: "Our Space", href: "/our-space" },
+            { label: "Our Spaces", href: "/our-spaces" },
             { label: "Sample Notes", href: "/sample-notes" },
             { label: "FAQs", href: "/faqs" },
         ],
