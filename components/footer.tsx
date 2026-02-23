@@ -75,15 +75,27 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row justify-between items-center px-20 py-10 border-t border-zinc-800">
                 <div className="text-center sm:text-left text-gray-400 text-sm">
                     <address className="not-italic mb-4">
+                        <span>
+                            <span className="sm:hidden">(Bishan Main Branch)</span> {/* Mobile */}
+                            <span className="hidden sm:inline">Bishan Main Branch:</span> {/* Desktop */}
+                        </span>
                         <span className="block sm:inline">505B Bishan St 11,{" "}</span>
                         <span>#01-422</span>
-                        <a
-                            href="tel:+6512345678"
-                            className="block hover:underline hover:text-white transition-colors"
-                        >
-                            +65 8035 7523
-                        </a>
                     </address>
+                    <address className="not-italic mb-4">
+                        <span>
+                            <span className="sm:hidden">(Beauty World Outlet)</span> {/* Mobile */}
+                            <span className="hidden sm:inline">Beauty World Outlet:</span> {/* Desktop */}
+                        </span>
+                        <span className="block sm:inline">170 Upper Bukit Timah Rd,{" "}</span>
+                        <span>#14-02</span>
+                    </address>
+                    <a
+                        href="tel:+6512345678"
+                        className="block hover:underline hover:text-white transition-colors"
+                    >
+                        +65 8035 7523
+                    </a>
                     <p>&copy; {new Date().getFullYear()} Vivota Pte. Ltd.</p>
                     <p>All rights reserved.</p>
                 </div>

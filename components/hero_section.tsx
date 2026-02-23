@@ -22,7 +22,7 @@ export default function HeroSection() {
                     {/* Location */}
                     <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
                         <span className="block">JC Education Centre</span>
-                        <span className="block">3 minutes away from Bishan MRT</span>
+                        <span className="block">Now in Bishan x Beauty World</span>
                     </p>
 
                     <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
