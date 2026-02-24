@@ -148,7 +148,7 @@ export default function SchedulePage() {
 
                 <div className="text-center mb-6">
                     <p className="text-lg sm:text-xl text-white font-bold">
-                        Click on the tutor's name to visit their profile!
+                        Click on the tutor's name <span className="block sm:inline">to visit their profile!</span>
                     </p>
                 </div>
 
