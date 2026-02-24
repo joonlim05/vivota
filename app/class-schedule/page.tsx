@@ -11,7 +11,7 @@ export default function SchedulePage() {
 
         { day: 'Tuesday', time: '8:00 - 10:00 pm', subject_short: 'J2 Physics', subject_long: 'J2 Physics', tutor: 'Jaryl', outlet: 'Bishan' },
 
-        { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'J1 Phy', subject_long: 'J1 Physics', tutor: 'Tenor ', outlet: 'Bishan' },
+        { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'J1 Phy', subject_long: 'J1 Physics', tutor: 'Tenor', outlet: 'Bishan' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'J1/J2 GP', subject_long: 'J1/J2 General Paper', tutor: 'Tenor', outlet: 'Bishan' },
 
         { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J2 Chem', subject_long: 'J2 Chemistry', tutor: 'Elijah', outlet: 'Bishan' },
@@ -54,6 +54,16 @@ export default function SchedulePage() {
         { day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Sunday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
     ];
+
+    const tutorSlugs = {
+        Elijah: "elijah-lim",
+        Tenor: "tenor-ong",
+        Kaiser: "kaiser-tan",
+        Jaryl: "jaryl-lee",
+        Nithik: "nithik",
+        Ezra: "ezra-peh",
+        "Sze Yann": "sze-yann"
+    }; // for purpose of mapping tutor names to their respective profile page links
 
     const subjectColors = {
         'GP': 'bg-blue-50 border-blue-200 text-blue-900',
@@ -136,6 +146,12 @@ export default function SchedulePage() {
                     onOutletChange={setOutletFilter}
                 />
 
+                <div className="text-center mb-6">
+                    <p className="text-lg sm:text-xl text-white font-bold">
+                        Click on the tutor's name to visit their profile!
+                    </p>
+                </div>
+
                 <div className="space-y-6">
                     {dayOrder.map(day => {
                         const lessons = groupedSchedule[day];
@@ -167,10 +183,13 @@ export default function SchedulePage() {
                                                     <span className="text-lg sm:text-xl font-bold hidden md:inline">
                                                         {lesson.subject_long}
                                                     </span>
-                                                    {lesson.tutor && (
-                                                        <span className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium">
+                                                    {lesson.tutor && (lesson.tutor in tutorSlugs) && (
+                                                        <Link
+                                                            href={`/${tutorSlugs[lesson.tutor as keyof typeof tutorSlugs]}`}
+                                                            className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium hover:font-bold transition"
+                                                        >
                                                             {lesson.tutor}
-                                                        </span>
+                                                        </Link>
                                                     )}
                                                     {lesson.outlet && (
                                                         <span className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium">
