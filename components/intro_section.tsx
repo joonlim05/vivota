@@ -21,7 +21,7 @@ export default function IntroSection() {
                     <span className="block sm:inline">Meet our Vivota </span>
                     <span className="block sm:inline">Content Experts</span>
                 </h1>
-                <p className="block lg:hidden">
+                <p className="block lg:hidden max-w-xl">
                     Our Vivota Content Experts are excited to meet you all!
                     <span className="block">Explore each tutor's profile to learn more about them.</span>
                     <Link href="/our-content-experts" className="block mt-6">
