@@ -21,7 +21,7 @@ export default function SubjectsSection() {
                     <span className="block lg:inline">tailored for Junior College students.</span>
                 </h2>
                 <h2 className="text-base md:text-lg 2xl:text-xl text-white text-center tracking-wide">
-                    <span className="block md:inline">Explore the 5 subjects taught in-depth{" "}</span>
+                    <span className="block md:inline">Explore the subjects taught in-depth{" "}</span>
                     <span className="block md:inline">by our Content Experts!</span>
                 </h2>
             </div>

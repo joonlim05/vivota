@@ -12,7 +12,7 @@ const FooterItems: FooterItem[] = [
         dropdown: [
             { label: "The Vivota Oath", href: "/vivota-oath" },
             { label: "The Vivota System", href: "/vivota-system" },
-            { label: "Our Space", href: "/our-space" },
+            { label: "Our Space", href: "/our-spaces" },
             { label: "Sample Notes", href: "/sample-notes" },
             { label: "FAQs", href: "/faqs" },
         ],
