@@ -22,7 +22,8 @@ export default function HeroSection() {
                     {/* Location */}
                     <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
                         <span className="block">JC Education Centre</span>
-                        <span className="block">Now in Bishan x Beauty World</span>
+                        <span className="block">Two Prime Locations</span>
+                        <span className="block">Bishan & Beauty World</span>
                     </p>
 
                     <p className="text-base sm:text-lg xl:text-xl font-medium text-gray-200">
@@ -52,7 +53,7 @@ export default function HeroSection() {
                         </Link>
                     </div>
                 </div>
-                
+
                 <img
                     src="hero.jpg"
                     alt="Hero"

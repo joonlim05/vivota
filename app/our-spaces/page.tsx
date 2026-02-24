@@ -23,7 +23,7 @@ export default function OurSpace() {
                 {/* Images Section */}
                 <div className="space-y-12">
                     <div>
-                        <p className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-8">Bishan Main Branch</p>
+                        <p className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-8">Bishan Outlet</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="relative w-full h-80 sm:h-100 overflow-hidden shadow-md">
                                 <Image

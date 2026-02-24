@@ -76,8 +76,8 @@ export default function Footer() {
                 <div className="text-center sm:text-left text-gray-400 text-sm">
                     <address className="not-italic mb-4">
                         <span>
-                            <span className="sm:hidden">(Bishan Main Branch)</span> {/* Mobile */}
-                            <span className="hidden sm:inline">Bishan Main Branch:</span> {/* Desktop */}
+                            <span className="sm:hidden">(Bishan Outlet)</span> {/* Mobile */}
+                            <span className="hidden sm:inline">Bishan Outlet:</span> {/* Desktop */}
                         </span>
                         <span className="block sm:inline">505B Bishan St 11,{" "}</span>
                         <span>#01-422</span>

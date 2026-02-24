@@ -107,11 +107,21 @@ export default function SchedulePage() {
                         Vivota Class Schedule
                     </h1>
                     <div className="flex flex-col items-center gap-2">
-                        <div className="flex items-center justify-center gap-2">
-                            <MapPin className="w-4 h-4" />
-                            <p className="text-base sm:text-lg font-semibold">Economics Cafe</p>
+                        <div className="flex flex-col items-center gap-2">
+                            <div className="flex items-center gap-2">
+                                <MapPin className="w-4 h-4" />
+                                <p className="text-base sm:text-lg font-semibold">
+                                    505B Bishan St 11, #01-422 (Bishan)
+                                </p>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <MapPin className="w-4 h-4" />
+                                <p className="text-base sm:text-lg font-semibold">
+                                    170 Upper Bukit Timah Rd, #14-02 (Beauty World)
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-base sm:text-lg">505B Bishan St 11, #01-422</p>
                     </div>
                 </div>
 

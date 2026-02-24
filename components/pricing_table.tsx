@@ -15,14 +15,15 @@ export default function PricingTable() {
         { original: "$375", discounted: "" },
         { original: "$700", discounted: "" },
         { original: "$1000", discounted: "" },
-        { original: "$1300", discounted: "" }
+        { original: "$1300", discounted: "" },
+        { original: "$1600", discounted: "" }
       ],
       description: "4 lessons x 2h",
       promo: ""
     },
   ];
 
-  const subjects = ["1 Subject", "2 Subjects", "3 Subjects", "4 Subjects"];
+  const subjects = ["1 Subject", "2 Subjects", "3 Subjects", "4 Subjects", "5 Subjects"];
 
   return (
     <div className="flex items-center justify-center">
@@ -62,7 +63,7 @@ export default function PricingTable() {
                     </div>
                   </td>
                   {classType.name === "Diagnostic" ? (
-                    <td colSpan={4} className="py-6 px-6 text-center text-lg md:text-xl xl:text-2xl">
+                    <td colSpan={5} className="py-6 px-6 text-center text-lg md:text-xl xl:text-2xl">
                       <span className={`${classType.color}`}>
                         {classType.pricing[0].discounted}
                       </span>
