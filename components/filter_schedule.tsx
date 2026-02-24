@@ -19,7 +19,7 @@ export default function ScheduleFilter({
     onLevelChange,
     onOutletChange
 }: ScheduleFilterProps) {
-    const subjects = ['All Subjects', 'General Paper', 'Chemistry', 'Physics', 'Biology', 'Mathematics', 'Economics'];
+    const subjects = ['All Subjects', 'Biology', 'Chemistry', 'Economics', 'General Paper', 'Mathematics', 'Physics'];
     const levels = ['All Levels', 'J1', 'J2'];
     const outlets = ['All Outlets', 'Bishan', 'Beauty World']
 
@@ -49,7 +49,7 @@ export default function ScheduleFilter({
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md border bg-white text-black z-10 shadow-lg">
+                            <ListboxOptions className="absolute mt-1 w-full rounded-md border bg-white text-black z-10 shadow-lg">
                                 {subjects.map((subject) => (
                                     <ListboxOption
                                         key={subject}
