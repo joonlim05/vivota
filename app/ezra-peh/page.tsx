@@ -3,28 +3,28 @@ import TutorDetails from "@/components/tutor_details"
 export default function TutorProfile() {
 
     const tutor = {
-        name: "Kaiser Tan",
-        subjects: "Biology (Lead Tutor) & Chemistry",
+        name: "Ezra Peh",
+        subjects: "Economics (Lead Tutor)",
         highlights: [
-            "Singapore Medical Student",
-            "Tutored 30+ students privately since 2023",
-            "SAF Young Leaders Award",
-            "Straight As for Bio, Chem and Math",
-            "Dean’s List, Eunoia Junior College",
-            "Integrated Programme (IP), Catholic High School"
+            "Medical Student with Full Ride Scholarship",
+            "Received offer of admissions from multiple medical schools",
+            "Yao Kwok Wah Award",
+            "90RP AAAA/AA, BCME",
+            "Academic Tutor since 2022",
+            "Integrated Programme (IP) Catholic High School",
+            "Eunoia Junior College"
         ],
-        bio: `Hi, my name is Kaiser, and I am currently a medical student studying in Singapore. 
-        My journey as a tutor began from a deep love for education, especially working with children who learn differently. 
-        I started out tutoring disadvantaged and special needs students, where I discovered the importance of patience, clear explanation, 
-        and finding innovative ways to make learning meaningful. Through the years, I’ve developed a personalised and adaptive teaching approach 
-        that focuses on identifying how each student learns best, and guiding them step-by-step toward confidence and mastery.` ,
+        bio: `Hello! My name is Ezra and I am currently a medical student in Singapore. 
+        My tutoring journey started through volunteering, where I provided free tuition to underprivileged students. 
+        What began as service quickly grew into a genuine passion. Seeing the smile on student’s faces when they have their “eureka” 
+        moment always made me feel fulfilled and happy.`,
+        
+        at_vivota: `Over the years, I have studied the common exam trends, question types, and answering techniques tested across the mid-years of 12 JCs, 
+        and A-Levels. I believe Economics becomes so much more enjoyable when we understand the logical flow of reasoning behind every concept.
+         When students learn to structure their thinking clearly and coherently, their analysis becomes sharper, 
+         and the subject becomes much more intuitive.`,
 
-        at_vivota: `At Vivota, I believe that Biology becomes clearer, easier, and more intuitive when students can see the bigger picture 
-        and the underlying logic behind systems. My goal is not only to help students improve their grades, but also to nurture curiosity, 
-        resilience, and an appreciation for how the living world functions. I believe every student is capable of excellence, 
-        and look forward to bringing out the best in your child!`,
-
-        img: "kaiser.png"
+        img: "ezra.png"
     }
 
     return (

@@ -3,28 +3,24 @@ import TutorDetails from "@/components/tutor_details"
 export default function TutorProfile() {
 
     const tutor = {
-        name: "Kaiser Tan",
-        subjects: "Biology (Lead Tutor) & Chemistry",
+        name: "Sze Yann",
+        subjects: "General Paper (Deputy Lead Tutor)",
         highlights: [
-            "Singapore Medical Student",
-            "Tutored 30+ students privately since 2023",
-            "SAF Young Leaders Award",
-            "Straight As for Bio, Chem and Math",
-            "Dean’s List, Eunoia Junior College",
-            "Integrated Programme (IP), Catholic High School"
+            "Top 90th percentile in VJC Cohort for H2 History, H2 Economics and General Paper",
+            "Taught in MOE school (secondary)",
+            "Edusave Academic Achievement 2022,2023,2024,2025",
+            "Tutored 5+ students privately since 2025",
+            "A1 for History and Elect English Lit/ SS in GCE O Levels",
         ],
-        bio: `Hi, my name is Kaiser, and I am currently a medical student studying in Singapore. 
-        My journey as a tutor began from a deep love for education, especially working with children who learn differently. 
-        I started out tutoring disadvantaged and special needs students, where I discovered the importance of patience, clear explanation, 
-        and finding innovative ways to make learning meaningful. Through the years, I’ve developed a personalised and adaptive teaching approach 
-        that focuses on identifying how each student learns best, and guiding them step-by-step toward confidence and mastery.` ,
+        bio: `I am a warm and approachable educator who believes that strong academic results begin with clarity and confidence. 
+        My lessons are engaging, structured, and easy to follow, helping students feel supported while being intellectually stretched to continuously improve.`,
 
-        at_vivota: `At Vivota, I believe that Biology becomes clearer, easier, and more intuitive when students can see the bigger picture 
-        and the underlying logic behind systems. My goal is not only to help students improve their grades, but also to nurture curiosity, 
-        resilience, and an appreciation for how the living world functions. I believe every student is capable of excellence, 
-        and look forward to bringing out the best in your child!`,
+        at_vivota: `I adapt to each student’s learning needs — guiding History students to sharpen their explanation and source analysis skills, and breaking down General Paper into clear essay structures with focused practice for comprehension. 
+        My role at Vivota is to help students love writing, instead of dreading it. When students truly understand the “why,” something shifts. 
+        They stop second-guessing themselves and start trusting their thinking. Writing feels less intimidating, analysis feels less overwhelming, 
+        and improvement comes quietly but surely — built on real understanding, not pressure.` ,
 
-        img: "kaiser.png"
+        img: "sze-yann.png"
     }
 
     return (

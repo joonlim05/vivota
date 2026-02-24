@@ -3,28 +3,28 @@ import TutorDetails from "@/components/tutor_details"
 export default function TutorProfile() {
 
     const tutor = {
-        name: "Kaiser Tan",
-        subjects: "Biology (Lead Tutor) & Chemistry",
+        name: "Nithik",
+        subjects: "Chemistry (Deputy Lead Tutor) & Biology",
         highlights: [
             "Singapore Medical Student",
-            "Tutored 30+ students privately since 2023",
-            "SAF Young Leaders Award",
-            "Straight As for Bio, Chem and Math",
-            "Dean’s List, Eunoia Junior College",
-            "Integrated Programme (IP), Catholic High School"
+            "SINDA Academic Excellence Award Recipient",
+            "Academic tutor since 2022 ",
+            "Straight As for BCME in A Levels",
+            "H3 Chemistry in VJC",
+            "Integrated Programme (IP), Victoria Junior College"
         ],
-        bio: `Hi, my name is Kaiser, and I am currently a medical student studying in Singapore. 
-        My journey as a tutor began from a deep love for education, especially working with children who learn differently. 
-        I started out tutoring disadvantaged and special needs students, where I discovered the importance of patience, clear explanation, 
-        and finding innovative ways to make learning meaningful. Through the years, I’ve developed a personalised and adaptive teaching approach 
-        that focuses on identifying how each student learns best, and guiding them step-by-step toward confidence and mastery.` ,
+        bio: `Hey! I’m Nithik and I am a medical student in Singapore. My passion for service first took root during my time in
+         Student Council in VJC. After graduating, I wanted to channel both that spirit of service and my academic strengths
+          into guiding new JC students to perform with greater clarity and confidence.` ,
 
-        at_vivota: `At Vivota, I believe that Biology becomes clearer, easier, and more intuitive when students can see the bigger picture 
-        and the underlying logic behind systems. My goal is not only to help students improve their grades, but also to nurture curiosity, 
-        resilience, and an appreciation for how the living world functions. I believe every student is capable of excellence, 
-        and look forward to bringing out the best in your child!`,
+        at_vivota: `My teaching philosophy is built on two pillars: understanding and application. 
+        I believe Chemistry and Biology must first be deeply understood. When students truly grasp the concepts, 
+        interest naturally follows, and answers begin to flow logically rather than mechanically. This foundation, 
+        paired with consistent practice and targeted feedback, sharpens exam technique and strengthens performance. 
+        It is a method I personally relied on throughout my own academic journey, and one I have seen consistently empower
+         students to achieve meaningful improvement.`,
 
-        img: "kaiser.png"
+        img: "nithik.png"
     }
 
     return (
