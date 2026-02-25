@@ -11,8 +11,7 @@ export default function TutorProfile() {
             "Yao Kwok Wah Award",
             "90RP AAAA/AA, BCME",
             "Academic Tutor since 2022",
-            "Integrated Programme (IP) Catholic High School",
-            "Eunoia Junior College"
+            "Integrated Programme (IP) Catholic High School & Eunoia Junior College",
         ],
         bio: `Hello! My name is Ezra and I am currently a medical student in Singapore. 
         My tutoring journey started through volunteering, where I provided free tuition to underprivileged students. 

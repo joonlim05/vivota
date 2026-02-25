@@ -7,8 +7,7 @@ export default function TutorProfile() {
         subjects: "General Paper (Deputy Lead Tutor)",
         highlights: [
             "Top 90th percentile in VJC Cohort for H2 History, H2 Economics and General Paper",
-            "Taught in MOE school (secondary)",
-            "Edusave Academic Achievement 2022,2023,2024,2025",
+            "Edusave Academic Achievement 2022-2025",
             "Tutored 5+ students privately since 2025",
             "A1 for History and Elect English Lit/ SS in GCE O Levels",
         ],

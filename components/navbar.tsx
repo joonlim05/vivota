@@ -18,10 +18,11 @@ const navbarItems = [
     {
         label: "Subjects",
         dropdown: [
-            { label: "JC Physics", href: "/physics" },
-            { label: "JC Chemistry", href: "/chemistry" },
             { label: "JC Biology", href: "/biology" },
+            { label: "JC Chemistry", href: "/chemistry" },
+            { label: "JC Economics", href: "/economics" },
             { label: "JC Math", href: "/math" },
+            { label: "JC Physics", href: "/physics" },
             { label: "JC General Paper", href: "/general-paper" },
         ],
     },
