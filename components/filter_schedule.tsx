@@ -19,8 +19,8 @@ export default function ScheduleFilter({
     onLevelChange,
     onOutletChange
 }: ScheduleFilterProps) {
-    const subjects = ['All Subjects', 'Biology', 'Chemistry', 'Chinese/Higher Chinese', 'Economics', 'General Paper', 'Mathematics', 'Physics'];
-    const levels = ['All Levels', 'J1', 'J2'];
+    const subjects = ['All Subjects', 'Biology', 'Chemistry', 'Economics', 'General Paper', 'Mathematics', 'Physics', 'J1 CL/Upper Sec HCL'];
+    const levels = ['All Levels', 'J1', 'J2', 'Upper Sec'];
     const outlets = ['All Outlets', 'Bishan', 'Beauty World']
 
     return (
