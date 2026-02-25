@@ -6,7 +6,9 @@ export default function SubjectsSection() {
         { title: "Chemistry", pic: "/chemistry.svg", url: "/chemistry" },
         { title: "Biology", pic: "/biology.svg", url: "/biology" },
         { title: "Math", pic: "/math.svg", url: "/math" },
-        { title: "General Paper", pic: "/gp.svg", url: "/general-paper" }
+        { title: "Economics", pic: "/economics.svg", url: "/economics" },
+        { title: "General Paper", pic: "/gp.svg", url: "/general-paper" },
+        { title: "J1 CL/Upper Sec HCL", pic: "/chinese.svg", url: "/chinese" },
     ]
 
     return (

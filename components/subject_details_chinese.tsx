@@ -16,26 +16,35 @@ export type SubjectDetailsProps = {
         description: string;
     }[];
     topics: string[];
-    methods: string[];
+    methods: {
+        zh: string;
+        en: string;
+    }[];
     retentionTools?: {
         title: string;
         description: string;
     }[];
 };
 
-export default function SubjectDetails({ subject, topics, methods, retentionTools }: SubjectDetailsProps) {
+export default function SubjectDetails({ subject, topics, methods }: SubjectDetailsProps) {
     return (
         <div className="max-w-7xl mx-auto my-16 md:my-36 lg:my-40 px-8 sm:px-10 md:px-12 lg:px-14">
             {/* Hero Section */}
             <div className="container mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6 my-16 md:my-0">
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-                            Master {subject.type} Through {" "}
-                            <span className="text-yellow-400">{subject.method}</span>
+                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight whitespace-pre-line">
+                            <p className="text-yellow-400 mb-2">{subject.method}</p>
+                            <p>
+                                通过深度思辨 <br />
+                                掌控华文高分
+                            </p>
                         </h1>
                         <p className="text-base md:text-lg leading-relaxed">
                             {subject.blurb}
+                        </p>
+                        <p>
+                            (Learn to predict, hypothesize, and solve complex linguistic problems by building robust mental models that transfer across contexts.)
                         </p>
                         <Link href="/pricing-and-aid">
                             <button className="bg-gradient-to-r from-amber-300 to-yellow-500 px-8 py-4 text-black rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
@@ -67,7 +76,8 @@ export default function SubjectDetails({ subject, topics, methods, retentionTool
                     <div>
                         <h2 className="text-3xl font-bold mb-6">
                             <span className="block sm:inline">Core Topics in{" "}</span>
-                            <span>{subject.type == "General Paper" ? "H1" : "H2"}{" "}{subject.type}</span>
+                            <span>J1 Chinese/O Level HCL</span>
+                            <p>(核心课题)</p>
                         </h2>
                         <div className="space-y-3">
                             {topics.map((topic, idx) => (
@@ -83,41 +93,29 @@ export default function SubjectDetails({ subject, topics, methods, retentionTool
                     </div>
 
                     <div>
-                        <h2 className="text-3xl font-bold mb-6">Problem-Solving Tools</h2>
+                        <h2 className="text-3xl font-bold mb-6">
+                            <span>Problem-Solving Tools</span>
+                            <p>(应考工具箱)</p>
+                        </h2>
                         <div className="grid grid-cols-2 gap-3">
                             {methods.map((method, idx) => (
                                 <div
                                     key={idx}
-                                    className="p-4 bg-gradient-to-r from-blue-200 to-blue-400 text-gray-900 rounded-lg 
-                                    text-center font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105
-                                    flex items-center justify-center"
+                                    className="p-6 bg-gradient-to-r from-blue-200 to-blue-400 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                                 >
-                                    {method}
+                                    <h3 className="text-xl font-bold mb-1 text-black">
+                                        {method.zh}
+                                    </h3>
+
+                                    <p className="text-gray-800 leading-relaxed text-sm">
+                                        {method.en}
+                                    </p>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* Retention & Memory Tools (for bio) */}
-            {retentionTools && retentionTools.length > 0 && (
-                <div className="container mx-auto my-16 px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-center">Retention & Memory Tools (Bio)</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {retentionTools.map((tool, idx) => (
-                            <div
-                                key={idx}
-                                className="p-6 bg-gradient-to-r from-emerald-200 to-emerald-400 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
-                            >
-                                <h3 className="text-xl font-bold mb-3 text-black">{tool.title}</h3>
-                                <p className="text-gray-800 leading-relaxed">{tool.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            )}
-
 
             {/* Detailed Description */}
             <div className="bg-gradient-to-r from-yellow-100 via-amber-200 to-orange-300 text-white px-4 py-12 sm:p-12 md:p-16 rounded-lg my-16">
@@ -137,8 +135,8 @@ export default function SubjectDetails({ subject, topics, methods, retentionTool
             <div className="container mx-auto px-4 py-16 text-center">
                 <div className="max-w-2xl mx-auto space-y-6">
                     <h2 className="text-3xl md:text-4xl font-bold">Ready to Transform Your Learning?</h2>
-                    <p className="text-base md:text-lg">
-                        Join Vivota and {subject.cta}
+                    <p className="text-base md:text-lg whitespace-pre-line">
+                        {subject.cta}
                     </p>
                     <div className="flex gap-4 justify-center gap-8">
                         <Link href="/contact-us">
