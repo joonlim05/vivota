@@ -19,7 +19,7 @@ export default function ScheduleFilter({
     onLevelChange,
     onOutletChange
 }: ScheduleFilterProps) {
-    const subjects = ['All Subjects', 'Biology', 'Chemistry', 'Economics', 'General Paper', 'Mathematics', 'Physics'];
+    const subjects = ['All Subjects', 'Biology', 'Chemistry', 'Chinese/Higher Chinese', 'Economics', 'General Paper', 'Mathematics', 'Physics'];
     const levels = ['All Levels', 'J1', 'J2'];
     const outlets = ['All Outlets', 'Bishan', 'Beauty World']
 
@@ -28,7 +28,7 @@ export default function ScheduleFilter({
 
             <Listbox value={subjectFilter} onChange={onSubjectChange}>
                 {({ open }) => (
-                    <div className="relative w-40">
+                    <div className="relative w-50">
                         <ListboxButton className="w-full px-4 py-2 border rounded-lg text-white flex justify-between items-center
                         hover:border-amber-400 transition-colors duration-200 sm:text-lg">
                             <span className='ml-2'>{subjectFilter}</span>
@@ -67,7 +67,7 @@ export default function ScheduleFilter({
 
             <Listbox value={levelFilter} onChange={onLevelChange}>
                 {({ open }) => (
-                    <div className="relative w-40">
+                    <div className="relative w-50">
                         <ListboxButton className="w-full px-4 py-2 border rounded-lg text-white flex justify-between items-center
                         hover:border-amber-400 transition-colors duration-200 sm:text-lg">
                             <span className='ml-2'>{levelFilter}</span>
@@ -106,7 +106,7 @@ export default function ScheduleFilter({
 
             <Listbox value={outletFilter} onChange={onOutletChange}>
                 {({ open }) => (
-                    <div className="relative w-40">
+                    <div className="relative w-50">
                         <ListboxButton className="w-full px-4 py-2 border rounded-lg text-white flex justify-between items-center
                         hover:border-amber-400 transition-colors duration-200 sm:text-lg">
                             <span className='ml-2'>{outletFilter}</span>

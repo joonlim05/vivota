@@ -9,6 +9,7 @@ export default function OurContentExperts() {
         { name: "Ezra Peh", subjects: "Economics", img: "ezra.png", link: "/ezra-peh" },
         { name: "Nithik", subjects: "Chemistry, Biology", img: "nithik.png", link: "/nithik" },
         { name: "Sze Yann", subjects: "General Paper", img: "sze-yann.png", link: "/sze-yann" },
+        { name: "Huang Xian Wei", subjects: "Chinese/Higher Chinese", img: "xian_wei.png", link: "/huang-xian-wei" },
     ];
 
     return (
@@ -18,7 +19,7 @@ export default function OurContentExperts() {
                 <p className="space-y-12 max-w-4xl mx-auto text-base md:text-lg leading-relaxed mb-12">
                     At Vivota, our tutors aren’t just simply there to teach — they are true content specialists.
                     Each expert has deep mastery of their subject, grounded in strong academic credentials and real tutoring experience.
-                    More importantly, they understand the JC syllabus inside out, and are passionate about sharing their knowledge 
+                    More importantly, they understand the JC syllabus inside out, and are passionate about sharing their knowledge
                     in a way that’s engaging and easy to understand for our students.
                 </p>
             </div>

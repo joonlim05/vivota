@@ -35,11 +35,13 @@ export default function SchedulePage() {
         { day: 'Tuesday', time: '5:00 - 7:00 pm', subject_short: 'J2 GP', subject_long: 'J2 General Paper', tutor: 'Sze Yann', outlet: 'Beauty World' },
         { day: 'Tuesday', time: '7:00 - 9:00 pm', subject_short: 'J2 Phy', subject_long: 'J2 Physics', tutor: 'Tenor', outlet: 'Beauty World' },
 
-        { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
+        { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'Chinese/Higher Chinese', tutor: 'Huang XW', outlet: 'Beauty World' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
 
         { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J1 Bio', subject_long: 'J1 Biology', tutor: 'Kaiser', outlet: 'Beauty World' },
         { day: 'Thursday', time: '7:30 - 9:30 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Nithik', outlet: 'Beauty World' },
+
+        { day: 'Friday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'Chinese/Higher Chinese', tutor: 'Huang XW', outlet: 'Beauty World' },
 
         { day: 'Saturday', time: '9:00 - 11:00 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Saturday', time: '11:00 am - 1:00 pm', subject_short: 'J2 Econs', subject_long: 'J2 Economics', tutor: 'Ezra', outlet: 'Beauty World' },
@@ -51,7 +53,7 @@ export default function SchedulePage() {
         { day: 'Sunday', time: '9:00 - 11:00 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Sunday', time: '1:00 - 3:00 pm', subject_short: 'J1 Econs', subject_long: 'J1 Economics', tutor: 'Ezra', outlet: 'Beauty World' },
         { day: 'Sunday', time: '3:00 - 5:00 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Sze Yann', outlet: 'Beauty World' },
-        { day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
+        { day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'Chinese/Higher Chinese', tutor: 'Huang XW', outlet: 'Beauty World' },
         { day: 'Sunday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
     ];
 
@@ -62,7 +64,8 @@ export default function SchedulePage() {
         Jaryl: "jaryl-lee",
         Nithik: "nithik",
         Ezra: "ezra-peh",
-        "Sze Yann": "sze-yann"
+        "Sze Yann": "sze-yann",
+        "Huang XW": "huang-xian-wei"
     }; // for purpose of mapping tutor names to their respective profile page links
 
     const subjectColors = {
@@ -71,12 +74,13 @@ export default function SchedulePage() {
         'Phy': 'bg-yellow-50 border-yellow-200 text-yellow-900',
         'Bio': 'bg-green-50 border-green-200 text-green-900',
         'Math': 'bg-purple-50 border-purple-200 text-purple-900',
-        'Econs': 'bg-cyan-50 border-cyan-200 text-cyan-900',
+        'Econs': 'bg-cyan-100 border-cyan-200 text-cyan-900',
+        'CL/HCL': 'bg-orange-200 border-orange-200 text-orange-900',
         'Free Slot': 'bg-slate-50 border-slate-200 text-slate-900',
     };
 
     const getSubjectColor = (subject_short: string) => {
-        const key = ['GP', 'Chem', 'Phy', 'Bio', 'Math', 'Econs'].find(k => subject_short.includes(k));
+        const key = ['GP', 'Chem', 'Phy', 'Bio', 'Math', 'Econs', 'CL/HCL'].find(k => subject_short.includes(k));
         return subjectColors[key as keyof typeof subjectColors] || subjectColors['Free Slot'];
     };
 
@@ -186,13 +190,13 @@ export default function SchedulePage() {
                                                     {lesson.tutor && (lesson.tutor in tutorSlugs) && (
                                                         <Link
                                                             href={`/${tutorSlugs[lesson.tutor as keyof typeof tutorSlugs]}`}
-                                                            className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium hover:font-bold transition"
+                                                            className="px-2 py-1 text-center rounded-full bg-white bg-opacity-60 text-sm font-medium hover:font-bold transition"
                                                         >
                                                             {lesson.tutor}
                                                         </Link>
                                                     )}
                                                     {lesson.outlet && (
-                                                        <span className="px-2 py-1 rounded-full bg-white bg-opacity-60 text-sm font-medium">
+                                                        <span className="px-2 py-1 text-center rounded-full bg-white bg-opacity-60 text-sm font-medium">
                                                             {lesson.outlet}
                                                         </span>
                                                     )}
