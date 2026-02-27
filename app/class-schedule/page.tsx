@@ -69,12 +69,12 @@ export default function SchedulePage() {
     }; // for purpose of mapping tutor names to their respective profile page links
 
     const subjectColors = {
-        'GP': 'bg-blue-50 border-blue-200 text-blue-900',
-        'Chem': 'bg-red-50 border-red-200 text-red-900',
-        'Phy': 'bg-yellow-50 border-yellow-200 text-yellow-900',
-        'Bio': 'bg-green-50 border-green-200 text-green-900',
-        'Math': 'bg-purple-50 border-purple-200 text-purple-900',
-        'Econs': 'bg-cyan-100 border-cyan-200 text-cyan-900',
+        'GP': 'bg-blue-200 border-blue-300 text-blue-900',
+        'Chem': 'bg-yellow-200 border-yellow-300 text-yellow-900',
+        'Phy': 'bg-teal-200 border-teal-300 text-teal-900 ',
+        'Bio': 'bg-green-200 border-green-300 text-green-900',
+        'Math': 'bg-red-200 border-red-300 text-red-900',
+        'Econs': 'bg-purple-200 border-purple-300 text-purple-900',
         'CL/HCL': 'bg-orange-200 border-orange-200 text-orange-900',
         'Free Slot': 'bg-slate-50 border-slate-200 text-slate-900',
     };

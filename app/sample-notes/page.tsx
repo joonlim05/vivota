@@ -36,10 +36,17 @@ export default function SampleNotesPage() {
         },
         {
             id: 5,
+            subject: 'Economics',
+            posterImage: '/notes/econs_notes.png',
+            fileUrl: 'https://drive.google.com/file/d/18eFLsG76RdiK0rKk3sjFlFtrytw--rCQ/view?usp=sharing'
+        },
+        {
+            id: 6,
             subject: 'General Paper',
             posterImage: '/notes/GP_notes.png',
             fileUrl: 'https://drive.google.com/file/d/12uIzRVK7MQHXtD1av6HDfOIzAhWry1uE/view?usp=sharing'
         },
+
     ];
 
     const handleView = (subject: Subject) => {
