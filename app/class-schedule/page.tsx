@@ -32,7 +32,7 @@ export default function SchedulePage() {
         { day: 'Monday', time: '5:00 - 7:00 pm', subject_short: 'J2 Math', subject_long: 'J2 Mathematics', tutor: 'Jaryl', outlet: 'Beauty World' },
         { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'J1 Math', subject_long: 'J1 Mathematics', tutor: 'Jaryl', outlet: 'Beauty World' },
 
-        { day: 'Tuesday', time: '5:00 - 7:00 pm', subject_short: 'J2 GP', subject_long: 'J2 General Paper', tutor: 'Sze Yann', outlet: 'Beauty World' },
+        { day: 'Tuesday', time: '5:00 - 7:00 pm', subject_short: 'J2 GP', subject_long: 'J2 General Paper', tutor: 'Yann', outlet: 'Beauty World' },
         { day: 'Tuesday', time: '7:00 - 9:00 pm', subject_short: 'J2 Phy', subject_long: 'J2 Physics', tutor: 'Tenor', outlet: 'Beauty World' },
 
         { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
@@ -52,7 +52,7 @@ export default function SchedulePage() {
 
         { day: 'Sunday', time: '9:00 - 11:00 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Sunday', time: '1:00 - 3:00 pm', subject_short: 'J1 Econs', subject_long: 'J1 Economics', tutor: 'Ezra', outlet: 'Beauty World' },
-        { day: 'Sunday', time: '3:00 - 5:00 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Sze Yann', outlet: 'Beauty World' },
+        { day: 'Sunday', time: '3:00 - 5:00 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Yann', outlet: 'Beauty World' },
         { day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
         { day: 'Sunday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
     ];
@@ -64,7 +64,7 @@ export default function SchedulePage() {
         Jaryl: "jaryl-lee",
         Nithik: "nithik",
         Ezra: "ezra-peh",
-        "Sze Yann": "sze-yann",
+        "Yann": "yann",
         "Huang XW": "huang-xian-wei"
     }; // for purpose of mapping tutor names to their respective profile page links
 

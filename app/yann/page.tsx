@@ -3,13 +3,13 @@ import TutorDetails from "@/components/tutor_details"
 export default function TutorProfile() {
 
     const tutor = {
-        name: "Sze Yann",
+        name: "Yann",
         subjects: "General Paper (Deputy Lead Tutor)",
         highlights: [
-            "As for H1 GP, H1 Math, H2 Literature, H2 Economics",
+            "As for H1 GP, H2 Literature, H2 Economics",
             "Top 90th percentile in VJC Cohort for H2 History, H2 Economics and General Paper",
             "Edusave Academic Achievement 2022-2025",
-            "Tutored 5+ students privately since 2025",
+            "Tutored 20+ students privately since 2025",
             "A1 for History and Elect English Lit/ SS in GCE O Levels",
         ],
         bio: `I am a warm and approachable educator who believes that strong academic results begin with clarity and confidence. 
@@ -20,7 +20,7 @@ export default function TutorProfile() {
         They stop second-guessing themselves and start trusting their thinking. Writing feels less intimidating, analysis feels less overwhelming, 
         and improvement comes quietly but surely — built on real understanding, not pressure.` ,
 
-        img: "sze-yann.png"
+        img: "yann.png"
     }
 
     return (
