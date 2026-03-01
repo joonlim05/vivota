@@ -6,7 +6,7 @@ export default function TutorProfile() {
         name: "Sze Yann",
         subjects: "General Paper (Deputy Lead Tutor)",
         highlights: [
-            "As for H1 GP, H2 Literature, H2 Economics in A Levels",
+            "As for H1 GP, H1 Math, H2 Literature, H2 Economics",
             "Top 90th percentile in VJC Cohort for H2 History, H2 Economics and General Paper",
             "Edusave Academic Achievement 2022-2025",
             "Tutored 5+ students privately since 2025",
