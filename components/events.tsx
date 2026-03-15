@@ -6,9 +6,25 @@ export default function EventsCarousel() {
   const posters = [
     {
       id: 1,
-      title: "Free LPA",
+      title: "March Hol Crash Course",
+      image: "/events/march_hol_cc.jpg"
+    },
+    {
+      id: 2,
+      title: "Complimetary LPA",
       image: "/events/free_lpa.png"
     },
+    {
+      id: 3,
+      title: "100% Chemistry A Rate",
+      image: "/events/result_event1.jpg"
+    },
+    {
+      id: 4,
+      title: "100% Math A Rate",
+      image: "/events/result_event2.jpg"
+    },
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(Math.floor(posters.length / 2));
@@ -30,7 +46,7 @@ export default function EventsCarousel() {
         py-8 sm:py-16 md:py-24 lg:py-32 flex flex-col items-center w-full">
       <div className="max-w-6xl w-full">
         <h1 className="text-center text-3xl md:text-4xl font-bold mb-12">
-          Upcoming Events
+          Our Events Board
         </h1>
 
         <div className="relative">
@@ -54,7 +70,7 @@ export default function EventsCarousel() {
                     <img
                       src={poster.image}
                       alt={poster.title}
-                      className="w-full h-[400px] sm:h-[450px] md:h-[500px] object-contain"
+                      className="w-full object-contain"
                     />
                     <div className="p-4 mb-4 text-center">
                       <h3 className="text-lg sm:text-xl font-bold text-black">
