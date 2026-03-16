@@ -8,7 +8,7 @@ export default function SubjectsSection() {
         { title: "Math", pic: "/math.svg", url: "/math" },
         { title: "Economics", pic: "/economics.svg", url: "/economics" },
         { title: "General Paper", pic: "/gp.svg", url: "/general-paper" },
-        { title: "J1 CL/Upper Sec HCL", pic: "/chinese.svg", url: "/chinese" },
+        //{ title: "J1 CL/Upper Sec HCL", pic: "/chinese.svg", url: "/chinese" },
     ]
 
     return (

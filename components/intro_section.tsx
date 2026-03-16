@@ -11,7 +11,7 @@ export default function IntroSection() {
         { name: "Ezra Peh", subjects: "Economics", img: "ezra.png", link: "/ezra-peh" },
         { name: "Nithik", subjects: "Chemistry, Biology", img: "nithik.png", link: "/nithik" },
         { name: "Yann", subjects: "General Paper", img: "yann.png", link: "/yann" },
-        { name: "Huang Xian Wei", subjects: "Chinese/Higher Chinese", img: "xian_wei.png", link: "/huang-xian-wei" },
+        //{ name: "Huang Xian Wei", subjects: "Chinese/Higher Chinese", img: "xian_wei.png", link: "/huang-xian-wei" },
     ];
 
     return (

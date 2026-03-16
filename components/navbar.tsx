@@ -24,6 +24,7 @@ const navbarItems = [
             { label: "JC Math", href: "/math" },
             { label: "JC Physics", href: "/physics" },
             { label: "JC General Paper", href: "/general-paper" },
+            //{ label: "J1 CL/Upper Sec HCL", href: "/chinese" },
         ],
     },
     {
