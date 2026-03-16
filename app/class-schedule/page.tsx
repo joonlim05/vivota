@@ -35,13 +35,13 @@ export default function SchedulePage() {
         { day: 'Tuesday', time: '5:00 - 7:00 pm', subject_short: 'J2 GP', subject_long: 'J2 General Paper', tutor: 'Yann', outlet: 'Beauty World' },
         { day: 'Tuesday', time: '7:00 - 9:00 pm', subject_short: 'J2 Phy', subject_long: 'J2 Physics', tutor: 'Tenor', outlet: 'Beauty World' },
 
-        { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
+        //{ day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
 
         { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J1 Bio', subject_long: 'J1 Biology', tutor: 'Kaiser', outlet: 'Beauty World' },
         { day: 'Thursday', time: '7:30 - 9:30 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Nithik', outlet: 'Beauty World' },
 
-        { day: 'Friday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
+        //{ day: 'Friday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
 
         { day: 'Saturday', time: '9:00 - 11:00 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Saturday', time: '11:00 am - 1:00 pm', subject_short: 'J1 Econs', subject_long: 'J1 Economics', tutor: 'Ezra', outlet: 'Beauty World' },
@@ -53,7 +53,7 @@ export default function SchedulePage() {
         { day: 'Sunday', time: '9:00 - 11:00 am', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
         { day: 'Sunday', time: '1:00 - 3:00 pm', subject_short: 'J2 Econs', subject_long: 'J2 Economics', tutor: 'Ezra', outlet: 'Beauty World' },
         { day: 'Sunday', time: '3:00 - 5:00 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Yann', outlet: 'Beauty World' },
-        { day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
+        //{ day: 'Sunday', time: '5:00 - 7:00 pm', subject_short: 'CL/HCL', subject_long: 'J1 CL/Upper Sec HCL', tutor: 'Huang XW', outlet: 'Beauty World' },
         { day: 'Sunday', time: '7:00 - 9:00 pm', subject_short: 'Free Slot', subject_long: 'Free Slot', tutor: '', outlet: 'Beauty World' },
     ];
 
