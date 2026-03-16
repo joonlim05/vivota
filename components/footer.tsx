@@ -12,6 +12,7 @@ const FooterItems: FooterItem[] = [
         dropdown: [
             { label: "The Vivota Oath", href: "/vivota-oath" },
             { label: "The Vivota System", href: "/vivota-system" },
+            { label: "Our Content Experts", href: "/our-content-experts" },
             { label: "Our Space", href: "/our-spaces" },
             { label: "Sample Notes", href: "/sample-notes" },
             { label: "FAQs", href: "/faqs" },
@@ -20,11 +21,12 @@ const FooterItems: FooterItem[] = [
     {
         label: "Subjects",
         dropdown: [
-            { label: "JC Physics", href: "/physics" },
-            { label: "JC Chemistry", href: "/chemistry" },
             { label: "JC Biology", href: "/biology" },
-            { label: "JC Math", href: "/math" },
+            { label: "JC Chemistry", href: "/chemistry" },
+            { label: "JC Economics", href: "/economics" },
             { label: "JC General Paper", href: "/general-paper" },
+            { label: "JC Math", href: "/math" },
+            { label: "JC Physics", href: "/physics" },
         ],
     },
     {
