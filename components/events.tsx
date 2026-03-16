@@ -5,20 +5,22 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 export default function EventsCarousel() {
   const posters = [
     {
-      id: 3,
-      title: "March Hol Crash Course",
-      image: "/events/march_hol_cc.jpg"
+      id: 1,
+      title: "100% Chemistry A Rate",
+      image: "/events/result_event1.jpg"
     },
+
     {
       id: 2,
       title: "Complimetary LPA",
       image: "/events/free_lpa.png"
     },
     {
-      id: 1,
-      title: "100% Chemistry A Rate",
-      image: "/events/result_event1.jpg"
+      id: 3,
+      title: "March Hol Crash Course",
+      image: "/events/march_hol_cc.jpg"
     },
+
     {
       id: 4,
       title: "100% Math A Rate",
