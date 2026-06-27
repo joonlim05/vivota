@@ -7,20 +7,20 @@ import ScheduleFilter from '@/components/filter_schedule';
 export default function SchedulePage() {
     const schedule = [
         // BISHAN SCHEDULE
-        { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Elijah', outlet: 'Bishan' },
+        { day: 'Monday', time: '7:00 - 9:00 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Jaryl', outlet: 'Bishan' },
 
         { day: 'Tuesday', time: '8:00 - 10:00 pm', subject_short: 'J2 Physics', subject_long: 'J2 Physics', tutor: 'Jaryl', outlet: 'Bishan' },
 
         { day: 'Wednesday', time: '5:00 - 7:00 pm', subject_short: 'J1 Phy', subject_long: 'J1 Physics', tutor: 'Tenor', outlet: 'Bishan' },
         { day: 'Wednesday', time: '7:00 - 9:00 pm', subject_short: 'J1/J2 GP', subject_long: 'J1/J2 General Paper', tutor: 'Tenor', outlet: 'Bishan' },
 
-        { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J2 Chem', subject_long: 'J2 Chemistry', tutor: 'Elijah', outlet: 'Bishan' },
+        { day: 'Thursday', time: '5:30 - 7:30 pm', subject_short: 'J2 Chem', subject_long: 'J2 Chemistry', tutor: 'Jaryl', outlet: 'Bishan' },
         { day: 'Thursday', time: '7:30 - 9:30 pm', subject_short: 'J1 GP', subject_long: 'J1 General Paper', tutor: 'Tenor', outlet: 'Bishan' },
 
         { day: 'Friday', time: '5.00 - 7:00 pm', subject_short: 'J2 Math', subject_long: 'J2 Mathematics', tutor: 'Jaryl', outlet: 'Bishan' },
         { day: 'Friday', time: '7:30 - 9:30 pm', subject_short: 'J1 Math', subject_long: 'J1 Mathematics', tutor: 'Jaryl', outlet: 'Bishan' },
 
-        { day: 'Saturday', time: '3:30 - 5:30 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Elijah', outlet: 'Bishan' },
+        { day: 'Saturday', time: '3:30 - 5:30 pm', subject_short: 'J1 Chem', subject_long: 'J1 Chemistry', tutor: 'Jaryl', outlet: 'Bishan' },
         { day: 'Saturday', time: '5:30 - 7:30 pm', subject_short: 'J2 GP', subject_long: 'J2 General Paper', tutor: 'Tenor', outlet: 'Bishan' },
         { day: 'Saturday', time: '7:30 - 9:30 pm', subject_short: 'J2 Bio', subject_long: 'J2 Biology', tutor: 'Kaiser', outlet: 'Bishan' },
 
@@ -58,7 +58,7 @@ export default function SchedulePage() {
     ];
 
     const tutorSlugs = {
-        Elijah: "elijah-lim",
+        Jaryl: "Jaryl-lim",
         Tenor: "tenor-ong",
         Kaiser: "kaiser-tan",
         Jaryl: "jaryl-lee",

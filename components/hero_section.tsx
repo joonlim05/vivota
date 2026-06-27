@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
     return (
@@ -54,12 +55,19 @@ export default function HeroSection() {
                     </div>
                 </div>
 
-                <img
-                    src="hero.jpg"
+                <Image
+                    src="/hero.jpg"
                     alt="Hero"
+                    width={800}
+                    height={600}
+                    priority
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..." // see note below
+                    sizes="(max-width: 768px) 92vw, (max-width: 1024px) 67vw, (max-width: 1280px) 58vw, 50vw"
                     className="w-11/12 md:w-8/12 lg:w-7/12 xl:w-1/2 
                     rounded-xl border-4 border-amber-200 shadow-[0_0_15px_rgba(251,191,36,0.4)] mt-8 md:mt-4 xl:mt-0 xl:ml-12"
                 />
+
             </section>
         </>
     );

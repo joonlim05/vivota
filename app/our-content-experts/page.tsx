@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function OurContentExperts() {
     const tutors = [
-        { name: "Elijah Lim", subjects: "Chemistry, Biology", img: "elijah.png", link: "/elijah-lim" },
+        //{ name: "Elijah Lim", subjects: "Chemistry, Biology", img: "elijah.png", link: "/elijah-lim" },
         { name: "Tenor Ong", subjects: "Physics, General Paper", img: "tenor.png", link: "/tenor-ong" },
         { name: "Jaryl Lee", subjects: "Math, Physics", img: "jaryl.png", link: "/jaryl-lee" },
         { name: "Kaiser Tan", subjects: "Biology, Chemistry", img: "kaiser.png", link: "/kaiser-tan" },

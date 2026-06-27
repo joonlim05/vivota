@@ -15,14 +15,9 @@ export default function EventsCarousel() {
       title: "Complimetary LPA",
       image: "/events/free_lpa.png"
     },
+    
     {
       id: 3,
-      title: "March Hol Crash Course",
-      image: "/events/march_hol_cc.jpg"
-    },
-
-    {
-      id: 4,
       title: "100% Math A Rate",
       image: "/events/result_event2.jpg"
     },

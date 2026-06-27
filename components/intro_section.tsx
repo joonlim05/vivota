@@ -1,16 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function IntroSection() {
 
     const tutors = [
-        { name: "Elijah Lim", subjects: "Chemistry, Biology", img: "elijah.png", link: "/elijah-lim" },
-        { name: "Tenor Ong", subjects: "Physics, General Paper", img: "tenor.png", link: "/tenor-ong" },
-        { name: "Jaryl Lee", subjects: "Math, Physics", img: "jaryl.png", link: "/jaryl-lee" },
-        { name: "Kaiser Tan", subjects: "Biology, Chemistry", img: "kaiser.png", link: "/kaiser-tan" },
-        { name: "Ezra Peh", subjects: "Economics", img: "ezra.png", link: "/ezra-peh" },
-        { name: "Nithik", subjects: "Chemistry, Biology", img: "nithik.png", link: "/nithik" },
-        { name: "Fellah", subjects: "General Paper", img: "fellah.jpeg", link: "/fellah" },
+        //{ name: "Elijah Lim", subjects: "Chemistry, Biology", img: "elijah.png", link: "/elijah-lim" },
+        { name: "Tenor Ong", subjects: "Physics, General Paper", img: "/tenor.png", link: "/tenor-ong" },
+        { name: "Jaryl Lee", subjects: "Math, Physics", img: "/jaryl.png", link: "/jaryl-lee" },
+        { name: "Kaiser Tan", subjects: "Biology, Chemistry", img: "/kaiser.png", link: "/kaiser-tan" },
+        { name: "Ezra Peh", subjects: "Economics", img: "/ezra.png", link: "/ezra-peh" },
+        { name: "Nithik", subjects: "Chemistry, Biology", img: "/nithik.png", link: "/nithik" },
+        { name: "Fellah", subjects: "General Paper", img: "/fellah.jpeg", link: "/fellah" },
         //{ name: "Huang Xian Wei", subjects: "Chinese/Higher Chinese", img: "xian_wei.png", link: "/huang-xian-wei" },
     ];
 
@@ -36,17 +37,24 @@ export default function IntroSection() {
 
                 </p>
             </div>
-            <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:gap-12 2xl:gap-16 justify-items-center">
-                {tutors.map((tutor) => (
-                    <Link key={tutor.name} href={tutor.link}>
-                        <div className="relative w-full max-w-xs sm:max-w-none 2xl:scale-110 aspect-[3/4] rounded-lg overflow-hidden
-                         shadow-md cursor-pointer transform transition-transform duration-300 
-                         hover:scale-105 hover:shadow-xl hover:brightness-110 hover:-translate-y-1">
 
-                            <img
+            <div className="hidden lg:grid lg:grid-cols-3 lg:gap-12 2xl:gap-16 justify-items-center">
+                {tutors.map((tutor) => (
+                    <Link
+                        key={tutor.name}
+                        href={tutor.link}
+                        className="block w-full max-w-xs sm:max-w-none">
+
+                        <div className="relative aspect-3/4 rounded-lg overflow-hidden
+                 shadow-md cursor-pointer transform transition-transform duration-300 
+                 hover:scale-105 hover:shadow-xl hover:brightness-110 hover:-translate-y-1">
+
+                            <Image
                                 src={tutor.img}
                                 alt={tutor.name}
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 33vw"
                             />
 
                             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-yellow-200/90 to-transparent flex items-end p-4">
