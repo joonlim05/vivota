@@ -58,7 +58,6 @@ export default function SchedulePage() {
     ];
 
     const tutorSlugs = {
-        Jaryl: "Jaryl-lim",
         Tenor: "tenor-ong",
         Kaiser: "kaiser-tan",
         Jaryl: "jaryl-lee",
